@@ -1,0 +1,16 @@
+{
+    "appUrl": "/__dirname/<%= settings.appDir %>/",
+    "appModule": "c6.<%= package.name %>",
+    "distDir": "dist",
+    "awsJSON": ".aws.json",
+    "s3": {
+        "test": {
+            "bucket": "com.cinema6.staging",
+            "dir": "collateral/"
+        },
+        "production": {
+            "bucket": "com.cinema6.portal",
+            "dir": "collateral/"
+        }
+    }
+}
