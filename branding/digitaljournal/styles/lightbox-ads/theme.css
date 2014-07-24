@@ -20,11 +20,15 @@
     Theme Styles
     ========================================================================== */
     a {
-        color:#cc1100; border-bottom:1px dotted #cc1100;
+        color:#569; border-bottom:1px dotted #569;
     }
     .mr-pager__btn,
     .mr-player__play-btn,
     .mr-pages__current-indicator,
     .mr-splash__copy {
         background-color: #cc1100;
+    }
+    .mr-pub-logo-box {
+        background-image: url(../../img/digitaljournal_logo.gif); 
+        background-size: 150px 20px;
     }
