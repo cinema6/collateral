@@ -2,16 +2,16 @@
     Theme Styles (#4394CB)
     ========================================================================== */
     a:hover {
-        color:black; border-bottom:1px dotted black;
+        color:#8f0b00; border-bottom:1px dotted #8f0b00;
     }
     .mr-pager__btn--disabled:hover,
     .mr-preview__button:hover,
     .mr-nav__btn:hover,
     .mr-preview__thumbnail:hover .mr-preview__button  {
-        background: #4394CB;
+        background: #cc1100;
     }
     .mr-card__btn-watch:hover {
-        color: #4394CB;
+        color: #cc1100;
     }
 
     .mr-pager__btn--disabled:hover .mr-pager__icon-path {
