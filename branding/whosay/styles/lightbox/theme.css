@@ -7,7 +7,7 @@
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     }
     .tk--hdr, .ui-context__label {
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-weight:700;
+        font-family: Georgia, Times, Helvetica, sans-serif; font-weight:700;
     }
     body, .ui-nav__counter, .mr-card__type, .mr-card__title-h1, 
     .mr-ballot__title, .mr-results__title {
@@ -19,7 +19,7 @@
     Theme Styles
     ========================================================================== */
     a {
-        color:#569; border-bottom:1px dotted #569;
+        color:#3e74a2;
     }
     .mr-preview__button {
         background: rgba(213,22,29,0.7);
@@ -31,18 +31,18 @@
     .mr-pages__current-indicator,
     .mr-splash__copy,
     .pages__current-indicator {
-        background-color:#cc1100;
+        background-color:#0086c5;
     }
 
     .mr-pager__btn--disabled .mr-pager__icon-path {
-        fill:#252626;
+        fill:#0086c5;
     }
     .mr-pager__btn--disabled .mr-pager__label {
-        color:#252626;
+        color:#0086c5;
     }
 
     .mr-pub-logo-box {
-        background-image: url(../../img/digitaljournal_logo.gif);
+        background-image: url(../../img/whosay_logo.gif);
         background-size:9.375rem 1.25rem;
     }
 
