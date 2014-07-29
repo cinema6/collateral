@@ -7,7 +7,7 @@
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     }
     .tk--hdr, .ui-context__label {
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-family: Georgia, Times, Helvetica, sans-serif;
         font-weight:700;
     }
     body, .ui-nav__counter, .mr-card__type, .mr-card__title-h1, 
@@ -20,15 +20,15 @@
     Theme Styles
     ========================================================================== */
     a {
-        color:#569; border-bottom:1px dotted #569;
+        color:#3e74a2;
     }
     .mr-pager__btn,
     .mr-player__play-btn,
     .mr-pages__current-indicator,
     .mr-splash__copy {
-        background-color: #cc1100;
+        background-color: #0086c5;
     }
     .mr-pub-logo-box {
-        background-image: url(../../img/digitaljournal_logo.gif); 
+        background-image: url(../../img/whosay_logo.gif); 
         background-size: 150px 20px;
     }
