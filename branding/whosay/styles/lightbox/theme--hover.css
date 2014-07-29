@@ -2,21 +2,21 @@
     Theme Styles (#4394CB)
     ========================================================================== */
     a:hover {
-        color:#277bbb;
+        color:#0086C5;
     }
     .mr-pager__btn--disabled:hover,
     .mr-preview__button:hover,
     .mr-nav__btn:hover,
     .mr-preview__thumbnail:hover .mr-preview__button  {
-        background: #277bbb;
+        background: #0086C5;
     }
     .mr-card__btn-watch:hover {
-        color:#277bbb;
+        color:#0086C5;
     }
 
     .mr-pager__btn--disabled:hover .mr-pager__icon-path {
-        fill:#277bbb;
+        fill:#0086C5;
     }
     .mr-pager__btn--disabled:hover .mr-pager__label {
-        color:#277bbb;
+        color:#0086C5;
     }
