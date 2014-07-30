@@ -33,7 +33,7 @@
     Interface Styles
     ========================================================================== */
     a {
-        color:#0086c5;
+        color:#0086c5; border-bottom:0;
     }
     .ui-control__next, 
     .ui-control__prev, 
