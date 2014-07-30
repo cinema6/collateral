@@ -4,6 +4,9 @@
     .publisher__branding-logo {
         background-image:url('../../img/whosay_logo_stack.png');
     }
+        .ui-nav-left--landscape .publisher__branding-logo {
+            background-size: 75%;
+        }
 
 
 /*  ==========================================================================
@@ -30,12 +33,12 @@
     Interface Styles
     ========================================================================== */
     a {
-        color:#cc1100; border-bottom:1px dotted #cc1100;
+        color:#0086c5;
     }
     .ui-control__next, 
     .ui-control__prev, 
     .ui-nav__next, 
     .ui-nav__prev,
     .mr-splash__copy {
-        background-color: #cc1100;
+        background-color: #0086c5;
     }
