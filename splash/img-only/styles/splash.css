@@ -64,19 +64,19 @@
             transition: fill 0.25s;
         }
 
-    .c6mr-hasHover:hover:after {
+    .c6mr-hasHover .c6mr-splashImgOnly__start:hover:after {
         opacity:0.3;
     }
-        .c6mr-hasHover:hover .c6mr-playBtn {
+        .c6mr-hasHover .c6mr-splashImgOnly__start:hover .c6mr-playBtn {
             background-color:rgba(255,255,255,1);
         }
-        .c6mr-hasHover:hover .c6mr-playBtn:after {
+        .c6mr-hasHover .c6mr-splashImgOnly__start:hover .c6mr-playBtn:after {
             -webkit-transform: scale(1.1);
             -moz-transform: scale(1.1);
             -ms-transform: scale(1.1);
             transform: scale(1.1);
             opacity: 1;
         }
-        .c6mr-hasHover:hover .c6mr-playBtn .c6mr-playIcon {
+        .c6mr-hasHover .c6mr-splashImgOnly__start:hover .c6mr-playBtn .c6mr-playIcon {
             fill:#4a9cd1;
         }
