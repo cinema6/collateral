@@ -76,10 +76,10 @@
         }
 
 
-    .c6mr-hasHover .c6mr-splashVerticalStack__start:hover:after {
+    .c6mr-hasHover:hover:after {
         opacity:0.3;
     }
-        .c6mr-hasHover .c6mr-splashVerticalStack__start:hover .c6mr-playBtn {
+        .c6mr-hasHover:hover .c6mr-playBtn {
             background-color:rgba(255,255,255,1);
         }
         .c6mr-hasHover:hover .c6mr-playBtn:after {
@@ -89,6 +89,6 @@
             transform: scale(1.1);
             opacity: 1;
         }
-        .c6mr-hasHover .c6mr-splashVerticalStack__start:hover .c6mr-playBtn .c6mr-playIcon {
+        .c6mr-hasHover:hover .c6mr-playBtn .c6mr-playIcon {
             fill:#4a9cd1;
         }
