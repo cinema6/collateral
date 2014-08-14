@@ -1,0 +1,26 @@
+/*  ==========================================================================
+    Theme Styles (#2391d7)
+    ========================================================================== */
+    a:hover {
+        color:#06758f; border-bottom:1px solid #06758f;
+    }
+    .pager__btn--disabled:hover, .preview__button:hover, 
+    .preview__thumbnail:hover .preview__button  {
+        background: #09b1d8;
+    }
+    .pager__btn:hover .pager__label,
+    .card__btn-watch:hover {
+        color: #09b1d8;
+    }
+    .pager__btn:hover .pager__icon-path {
+        fill:#09b1d8;
+    }
+    .pager__btn--disabled:hover .pager__icon-path {
+        fill: #252626;
+    }
+    .pager__btn--disabled:hover .pager__icon-path {
+        fill: #252626;
+    }
+        .pager__btn--disabled:hover .pager__label {
+            color: #252626;
+        }

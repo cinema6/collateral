@@ -4,3 +4,6 @@
 .c6mr-splashTextOverlay__start--3-2 .c6mr-playBtn {
     top:20%; left:36%; right:36%; bottom:38%;
 }
+.c6mr-splashTextOverlay__start--3-2 .c6mr-preloader {
+    top:41%;
+}

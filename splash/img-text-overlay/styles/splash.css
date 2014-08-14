@@ -17,21 +17,74 @@
     border:0; padding:0; margin:0;
     display:block;
 }
+    .c6mr-splashTextOverlay__start:after {
+        content:'';
+        position:absolute; top:0; left:0;
+        background:black;
+        width:100%; height:100%;
+        opacity:0;
+        -webkit-transition: opacity 0.25s;
+        transition: opacity 0.25s;
+    }
 .c6mr-splashTextOverlay__copy {
-    position:absolute; bottom:0; left:0; right:0;
+    position:absolute; bottom:0; left:0; right:0; z-index: 1;
     padding:12px 6px; color:#fff;
     background:#000; background:rgba(0,0,0,0.55);
 }
     .c6mr-splashTextOverlay__copy .c6mr-title {
-        font-size:2em; line-height:1.5; font-weight:normal;
+        font-size:1.5em; line-height:1.5; font-weight:normal;
         margin:0;
     }
 .c6mr-splashTextOverlay__start .c6mr-playBtn {
-    background:rgba(74,156,209,0.75) 
-        url('https://portal.cinema6.com/collateral/splash/img-text-overlay/img/play.png') 58% 50% 
-        / 40% auto no-repeat;
-    position: absolute;
+    background:rgba(74,156,209,0.75);
+    position: absolute; z-index:1;
     border-radius:50%; border:3px solid #fff;
-    box-sizing:border-box;
     display:block;
+    -webkit-transition: background 0.25s;
+    transition: background 0.25s;
 }
+    .c6mr-splashTextOverlay__start .c6mr-playBtn:after {
+        pointer-events: none;
+        position: absolute; top: -7px; left: -7px;
+        width: 100%; height: 100%;
+        padding: 7px;
+        border-radius: 50%;
+        content: '';
+        -webkit-box-sizing: content-box; 
+        box-sizing: content-box;
+        box-shadow: 0 0 0 4px #fff;
+        -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+        transition: transform 0.2s, opacity 0.2s;
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+        opacity: 0;
+    }
+    
+    .c6mr-splashTextOverlay__start .c6mr-playIconHolder {
+        display:block;
+        height:56%; width:56%;
+        position:absolute; margin:22% 0 22% 26%;
+    }
+        .c6mr-splashTextOverlay__start .c6mr-playIcon {
+            fill:#fff;
+            -wekbit-transition: fill 0.25s;
+            transition: fill 0.25s;
+        }
+
+    .c6mr-hasHover:hover:after {
+        opacity:0.3;
+    }
+        .c6mr-hasHover:hover .c6mr-playBtn {
+            background-color:rgba(255,255,255,1);
+        }
+        .c6mr-hasHover:hover .c6mr-playBtn:after {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        .c6mr-hasHover:hover .c6mr-playBtn .c6mr-playIcon {
+            fill:#4a9cd1;
+        }
