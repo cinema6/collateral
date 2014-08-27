@@ -29,7 +29,9 @@
     .mr-player__play-btn,
     .mr-pages__current-indicator,
     .mr-splash__copy,
-    .pages__current-indicator {
+    .pages__current-indicator,
+    .mr-textCard__goBtn,
+    .mr-textCard__goImg:after {
         background-color:#fa6a00;
     }
 
