@@ -1,0 +1,32 @@
+/*  ==========================================================================
+    copy styles
+    ========================================================================== */
+    
+    body, .mr-card__btn-watch {
+        font-family:helvetica, arial, sans-serif;
+    }
+    .tk--hdr, .ui-context__label {
+        font-family:helvetica, arial, sans-serif; font-weight:bold;
+    }
+    body, .ui-nav__counter, .mr-card__type, .mr-card__title-h1, 
+    .mr-ballot__title, .mr-results__title {
+        font-weight: 400;
+    }
+
+
+/*  ==========================================================================
+    Theme Styles
+    ========================================================================== */
+    a {
+        color:#fa6a00; text-decoration:none;
+    }
+    .mr-pager__btn,
+    .mr-player__play-btn,
+    .mr-pages__current-indicator,
+    .mr-splash__copy {
+        background-color:#fa6a00;
+    }
+    .mr-pub-logo-box {
+        background-image: url('../../img/wired_desktop_logo.gif'); 
+        background-size: 150px 20px;
+    }

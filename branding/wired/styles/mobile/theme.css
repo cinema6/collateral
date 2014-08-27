@@ -1,0 +1,40 @@
+/*  ==========================================================================
+    Branding classes
+    ========================================================================== */
+    .publisher__branding-logo {
+        background-image:url('../../img/wired_desktop_logo.gif');
+    }
+
+
+/*  ==========================================================================
+    copy styles
+    ========================================================================== */
+
+    body, .mr-card__btn-watch {
+        font-family:helvetica, arial, sans-serif;
+    }
+
+    .tk--hdr, .ui-context__label {
+        font-family:helvetica, arial, sans-serif; font-weight:bold;
+    }
+
+    body, .ui-nav__counter, .mr-card__type, .mr-card__title-h1, 
+    .mr-ballot__title, .mr-results__title, 
+    .mr-toc-item__title  {
+        font-weight: 400;
+    }
+
+
+/*  ==========================================================================
+    Interface Styles
+    ========================================================================== */
+    a {
+        color:#fa6a00; text-decoration:none;
+    }
+    .ui-control__next, 
+    .ui-control__prev, 
+    .ui-nav__next, 
+    .ui-nav__prev,
+    .mr-splash__copy {
+        background-color:#fa6a00;
+    }
