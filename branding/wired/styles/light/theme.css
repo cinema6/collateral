@@ -1,0 +1,29 @@
+/*  ==========================================================================
+    copy styles
+    ========================================================================== */
+
+    body, .card__btn-watch {
+        font-family:helvetica, arial, sans-serif; font-weight: 400;
+    }
+    .tk--hdr, .ui-context__label {
+        font-family:helvetica, arial, sans-serif; font-weight:bold;
+    }
+    .ui-nav__counter, .card__type, .card__title-h1, 
+    .ballot__title, .results__title {
+        font-weight: 400;
+    }
+
+
+/*  ==========================================================================
+    Theme Styles
+    ========================================================================== */
+    a {
+        color:#fa6a00; text-decoration:none;
+    }
+    .pager__btn, 
+    .card__btn,
+    .player__play-btn,
+    .splash__copy,
+    .pages__current-indicator {
+        background-color:#fa6a00;
+    }
