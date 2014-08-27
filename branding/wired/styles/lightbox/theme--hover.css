@@ -1,0 +1,22 @@
+/*  ==========================================================================
+    Theme Styles (#4394CB)
+    ========================================================================== */
+    a:hover {
+        color:#E46100; border-bottom: 1px solid #E46100;
+    }
+    .mr-pager__btn--disabled:hover,
+    .mr-preview__button:hover,
+    .mr-nav__btn:hover,
+    .mr-preview__thumbnail:hover .mr-preview__button  {
+        background:#fa6a00;
+    }
+    .mr-card__btn-watch:hover {
+        color:#fa6a00;
+    }
+
+    .mr-pager__btn--disabled:hover .mr-pager__icon-path {
+        fill:#fa6a00;
+    }
+    .mr-pager__btn--disabled:hover .mr-pager__label {
+        color:#fa6a00;
+    }
