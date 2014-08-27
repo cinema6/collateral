@@ -29,7 +29,9 @@
     .ui-nav__prev,
     .mr-player__play-btn,
     .mr-pages__current-indicator,
-    .mr-splash__copy {
+    .mr-splash__copy,
+    .mr-textCard__goBtn,
+    .mr-textCard__goImg:after {
         background-color: #4394cb;
     }
 
