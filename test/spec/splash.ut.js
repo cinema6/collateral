@@ -45,17 +45,26 @@ describe('splash.js', function() {
         });
 
         describe('when the start is clicked', function() {
+            var event;
+
             function click(element) {
                 var event = document.createEvent('MouseEvents');
 
                 event.initMouseEvent('click');
 
+                spyOn(event, 'preventDefault').and.callThrough();
                 element.dispatchEvent(event);
+
+                return event;
             }
 
             beforeEach(function() {
                 loader.style.display = 'none';
-                click(start);
+                event = click(start);
+            });
+
+            it('should prevent the default behavior of the click', function() {
+                expect(event.preventDefault).toHaveBeenCalled();
             });
 
             it('should show the loader', function() {

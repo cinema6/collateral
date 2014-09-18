@@ -6,7 +6,9 @@ module.exports = function(c6, settings, splash) {
         isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
 
     starts.forEach(function(start) {
-        start.addEventListener('click', function() {
+        start.addEventListener('click', function(event) {
+            event.preventDefault();
+
             if (loader) {
                 loader.style.display = '';
             }
