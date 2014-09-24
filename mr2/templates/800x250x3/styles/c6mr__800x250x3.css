@@ -1,22 +1,22 @@
 /*  ======================================================
     main styles
     ====================================================== */
-    .c6mr2-600x500x6__group {
-        width:600px; height:500px; 
+    .c6mr2-800x250x3__group {
+        width:800px; height:250px; 
     }
 
-    .c6mr2-600x500x6__header {
+    .c6mr2-800x250x3__header {
         height:12px; width:100%;
         display: block;
     }
-        .c6mr2-600x500x6__headerTitle {
+        .c6mr2-800x250x3__headerTitle {
             margin:0; 
             position:absolute; left:0;
             font-size:14px; font-weight:bold;
             line-height: 1;
         }
 
-        .c6mr2-600x500x6__headerTag {
+        .c6mr2-800x250x3__headerTag {
             margin:0; 
             position: absolute; right:0;
             font-size:12px; color:#838383;
@@ -27,28 +27,27 @@
 /*  ======================================================
     article styles
     ====================================================== */
-    .c6mr2-600x500x6__article {
-        width:192px; height:232px;
+    .c6mr2-800x250x3__article {
+        width:260px; height:226px;
         float:left;
-        margin:12px 12px 0 0;
+        margin:12px 10px 0 0;
     }
-        .c6mr2-600x500x6__article:nth-child(3),
-        .c6mr2-600x500x6__article:nth-child(6) {
+        .c6mr2-800x250x3__article:nth-child(3) {
             margin:12px 0 0 0;
         }
 
 
-    .c6mr2-600x500x6__imgBox,
-    .c6mr2-600x500x6__img {
-        width:192px; height:156px; 
+    .c6mr2-800x250x3__imgBox,
+    .c6mr2-800x250x3__img {
+        width:260px; height:166px;
     }
 
         .c6mr2-mr__playBtn--600x500x6 {
             width:44px; height:44px;
-            top:54px; left:72px;
+            top:67px; left:106px;
         }
 
 
-    .c6mr2-600x500x6__articleCopy {
-        width:192px; height:76px;
+    .c6mr2-800x250x3__articleCopy {
+        width:260px; height:60px;
     }
