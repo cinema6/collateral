@@ -1,0 +1,113 @@
+/*  ======================================================
+    main styles
+    ====================================================== */
+    .c6mr-600x500x6__group {
+        width:600px; height:500px; 
+        position:relative;
+        background:#fff;
+        font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    }
+
+    .c6mr-600x500x6__header {
+        height:12px; width:100%;
+        display: block;
+    }
+        .c6mr-600x500x6__headerTitle {
+            margin:0; 
+            position:absolute; left:0;
+            font-size:14px; font-weight:bold;
+            line-height: 1;
+        }
+
+        .c6mr-600x500x6__headerTag {
+            margin:0; 
+            position: absolute; right:0;
+            font-size:12px; color:#838383;
+            line-height: 1.25;
+        }
+            .c6mr-600x500x6__c6Logo {
+                width:116px; height:16px;
+                display: inline-block; 
+                background:url('../../global/img/c6logo@2x.jpg') 50% 50% / contain no-repeat;
+                vertical-align: top;
+            }
+
+
+/*  ======================================================
+    article styles
+    ====================================================== */
+    .c6mr-600x500x6__article {
+        width:192px; height:232px;
+        overflow: hidden;
+        float:left;
+        margin:12px 12px 0 0;
+        cursor:pointer;
+    }
+        .c6mr-600x500x6__article:nth-child(3),
+        .c6mr-600x500x6__article:nth-child(6) {
+            margin:12px 0 0 0;
+        }
+
+
+    .c6mr-600x500x6__imgBox {
+        width:192px; height:156px; overflow: hidden;
+        background:#ccc url('https://portal.cinema6.com/collateral/splash/img-text-overlay/img/default_square.jpg') 
+            50% 50% / cover no-repeat;
+        position: relative;
+    }
+        .c6mr-600x500x6__img {
+            width:192px; height:156px;
+            background:50% 50% / cover no-repeat;
+        }
+            .c6mr-600x500x6__img img {
+                width:192px; display: block;
+            }
+
+        .c6mr-600x500x6__playBtn {
+            background:rgba(74,156,209,0.75);
+            position: absolute; z-index:1;
+            top:54px; left:72px;
+            border-radius:50%; border:2px solid #fff;
+            display:block;
+            -webkit-transition: background 0.25s;
+            transition: background 0.25s;
+            width:44px; height:44px;
+        }
+            .c6mr-600x500x6__playBtn:after {
+                pointer-events: none;
+                position: absolute; top: -7px; left: -7px;
+                width: 100%; height: 100%;
+                padding: 7px;
+                border-radius: 50%;
+                content: '';
+                -webkit-box-sizing: content-box; 
+                box-sizing: content-box;
+                box-shadow: 0 0 0 4px #fff;
+                -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+                transition: transform 0.2s, opacity 0.2s;
+                -webkit-transform: scale(.9);
+                -ms-transform: scale(.9);
+                transform: scale(.9);
+                opacity: 0;
+            }
+            
+            .c6mr-600x500x6__playIconHolder {
+                display:block;
+                height:56%; width:56%;
+                position:absolute; margin:22% 0 22% 26%;
+            }
+                .c6mr-600x500x6__playIcon {
+                    fill:#fff;
+                    -wekbit-transition: fill 0.25s;
+                    transition: fill 0.25s;
+                }
+
+
+    .c6mr-600x500x6__articleCopy {
+        width:192px; height:76px;
+    }
+        .c6mr-600x500x6__articleTitle {
+            font-size:14px; line-height: 16px;
+            color:#333; font-weight:normal;
+            margin:6px 0;
+        }
