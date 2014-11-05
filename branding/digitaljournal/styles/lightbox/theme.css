@@ -44,7 +44,8 @@
     .btnPrimary:focus,
     .pager__btn,
     .page__btn:before,
-    .textOnly__imgBox:after {
+    .textOnly__imgBox:after,
+    .ballot__result0 {
         background-color:#CC1100;
     }
     
@@ -55,6 +56,18 @@
         border-color:#CC1100;
     }
 
+
+
+/*  ================================================
+    ballot secondary color classes 
+    ================================================ */
+    .ballot__result1,
+    .ballot__btn1 {
+        background:#1789cb;
+    }
+    .ballot__btn1 {
+        border-color:#1789cb;
+    }
 
 
 /*  ================================================

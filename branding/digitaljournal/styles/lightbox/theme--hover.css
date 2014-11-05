@@ -32,3 +32,15 @@
     .pager__btn:hover .pager__btnIconPath {
         fill:#CC1100;
     }
+
+
+
+/*  ================================================
+    ballot secondary color classes 
+    ================================================ */
+    .ballot__btn1:hover:before {
+        background-color:#1789cb;
+    }
+    .ballot__btn1:hover .ballot__btnLabel {
+        color:#1789cb;
+    }

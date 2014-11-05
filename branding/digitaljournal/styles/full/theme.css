@@ -46,7 +46,8 @@
     .btnSecondary:active,
     .btnSecondary:focus,
     .playlist__item--current,
-    .playlist__item--current:last-child {
+    .playlist__item--current:last-child,
+    .ballot__result0 {
         background-color:#CC1100;
     }
     
@@ -59,6 +60,21 @@
     .slideNav__btn {
         border-color:#CC1100;
     }
+
+
+
+
+/*  ================================================
+    ballot secondary color classes 
+    ================================================ */
+    .ballot__result1,
+    .ballot__btn1 {
+        background:#1789cb;
+    }
+    .ballot__btn1 {
+        border-color:#1789cb;
+    }
+
 
 
 
