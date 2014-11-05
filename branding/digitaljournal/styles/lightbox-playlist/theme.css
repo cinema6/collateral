@@ -46,7 +46,8 @@
     .btnSecondary:active,
     .btnSecondary:focus,
     .playlist__item--current,
-    .playlist__item--current:last-child {
+    .playlist__item--current:last-child,
+    .textOnly__imgBox:after {
         background-color:#CC1100;
     }
     
@@ -55,8 +56,7 @@
     .btnPrimary:active,
     .btnPrimary:focus,
     .playlist__item--current,
-    .playlist__item--current:last-child,
-    .slideNav__btn {
+    .playlist__item--current:last-child {
         border-color:#CC1100;
     }
 
@@ -66,12 +66,8 @@
     primary text color classes 
     ================================================ */
     .titleBar__titleText,
-    .playlistHead__title,
-    .playlist__title,
-    .playlist__link,
-    .playlist__item--current .playlist__sourceLink,
-    .card__title, 
-    .textOnly__title,
-    .ballot__title {
+    .card__title,
+    .ballot__title,
+    .adSkip__message {
         color:#000;
     }

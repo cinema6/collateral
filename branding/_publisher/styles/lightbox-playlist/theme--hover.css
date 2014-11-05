@@ -3,8 +3,8 @@
     ================================================ */
     .MiniReel__closeBtn:hover,
     .playlist__item.playlist__item--current:hover,
-    .player__playBtn:hover,
     .ballot__btn0:hover:before,
+    .player__playBtn:hover,
     .btnSecondary:hover {
         background-color:#CC1100;
     }
@@ -29,6 +29,6 @@
 
 
 
-    .pager__btn:hover .pager__btnIconPath {
+    .nav__btn:hover .nav__btnPath {
         fill:#CC1100;
     }
