@@ -24,6 +24,10 @@
     .tk--hdr {
         font-family:'Georgia', Times, serif;
     }
+    .tk--action {
+        font-family:'Georgia', Times, serif;
+        font-weight:bold;
+    }
     body, .tk--copy {
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         color:#444;
