@@ -14,6 +14,13 @@
         float:right;
         display:block;
     }
+    /*for soloMRs with publisher logos*/
+    .experience__group--soloMR .cards__group {
+        top:2em;
+    }
+    .experience__group--soloMR .publisherProfile__logoBox {
+        float:none;
+    }
 
 
 
