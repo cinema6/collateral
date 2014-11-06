@@ -18,6 +18,7 @@
 
 
     .sponsorProfile__imgBox:hover,
+    .brandProfile__logoBox:hover,
     .textLink:hover,
     .displayAdBrand__link:hover .displayAdBrand__linkLabel {
         border-color:#CC1100;
