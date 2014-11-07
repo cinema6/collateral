@@ -5,7 +5,8 @@
     .playlist__item.playlist__item--current:hover,
     .player__playBtn:hover,
     .ballot__btn0:hover:before,
-    .btnSecondary:hover {
+    .btnSecondary:hover,
+    .actionsModal__btn:hover:after {
         background-color:#CC1100;
     }
 
