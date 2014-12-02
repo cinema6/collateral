@@ -80,8 +80,8 @@
             <h2 class="c6Survey__question">
                 Are you familiar with the <strong>Diageo</strong> brand?
             </h2>
-            <button class="c6Survey__btn" title="No" type="button">No</button>
-            <button class="c6Survey__btn" title="Yes" type="button">Yes</button>
+            <button class="c6Survey__btn" title="No" type="button" value="0">No</button>
+            <button class="c6Survey__btn" title="Yes" type="button" value="1">Yes</button>
         </div>
 
         <div id="c6Survey__results" class="c6Survey__block">
@@ -117,19 +117,18 @@
                         ballotItem : params.qu,
                         vote       : e.target.value 
                     }),
-                    surveyUrl = params.dbg ? 
-                        '//staging.cinema6.com/api/public/vote' :
-                        '//portal.cinema6.com/api/public/vote' ;
+                    surveyUrl = '/api/public/vote';
                 if (!window.location.protocol.match(/^http/)){
-                    surveyUrl = 'http:' + surveyUrl;
+                    surveyUrl = 'http://staging.cinema6.com/api/public/vote';
                 }
+
                 req.open('POST',surveyUrl,true);
                 req.setRequestHeader('Content-Type', 'application/json');
                 req.setRequestHeader('Content-Length', data.length);
                 req.onreadystatechange=function(){
                     if ((req.readyState === 4) && (req.status === 200)){ 
-                        ga('send','event','survey',
-                            params.el + '-' + params.qu,e.target.value);
+                        ga('send','event','Survey',
+                            params.el, params.qu + '|' + e.target.value);
                     }
                 };
                 req.send(data);
