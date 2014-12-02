@@ -7,6 +7,8 @@
         options: {
             collapseBooleanAttributes: true,
             collapseWhitespace: true,
+            minifyCSS: true,
+            minifyJS: true,
             removeAttributeQuotes: true,
             removeComments: true,
             removeEmptyAttributes: true,

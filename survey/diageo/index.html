@@ -1,0 +1,159 @@
+<html>
+<head>
+    <title>Brand Survey Widget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <style type="text/css">
+        .c6Survey__group {
+            width:298px; height:248px;
+            border:1px solid #c60850;
+            font-size:16px;
+            font-family:"Helvetica", "Helvetica Neue", Arial, sans-serif;
+            text-align: center;
+            color:#444;
+            background:#e4e4e4;
+            position: relative;
+        }
+        .c6Survey__header {
+            background:#c60850;
+            height:33px;
+            padding:14px 0 0 0;
+        }
+            .c6Survey__title {
+                font-size:18px;
+                margin:0;
+                color:#fff;
+                text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+            }
+
+        #c6Survey__questions {
+            z-index:2;
+        }
+        #c6Survey__results {
+            z-index: 1;
+            opacity:0;
+        }
+        .c6Survey__block {
+            position:absolute;
+            top:47px; left:0; right:0;
+            width:298px;
+            -webkit-transition:all 0.5s;
+            transition:all 0.5s;
+        }
+            .c6Survey__question {
+                font-size:15px; 
+                color:#444;
+                font-weight:normal;
+                margin:30px 0;
+            }
+            .c6Survey__btn {
+                width:250px; height:40px;
+                display: block;
+                margin:0 auto 16px;
+                background:#fff;
+                border:3px solid #c60850;
+                color:#c60850;
+                text-align: center;
+                font-size:18px;
+                font-weight:bold;
+                cursor: pointer;
+                -webkit-transition:all 0.3s; transition:all 0.3s;
+            }
+                .c6Survey__btn:hover,
+                .c6Survey__btn:focus,
+                .c6Survey__btn:active {
+                    outline:none;
+                    background:#c60850;
+                    color:#fff;
+                }
+            .c6Survey__confirm {
+                font-size:24px;
+            }
+    </style>
+    <div class="c6Survey__group">
+        <div class="c6Survey__header">
+            <h1 class="c6Survey__title">Your Feedback Matters</h1>
+        </div>
+
+        <div id="c6Survey__questions" class="c6Survey__block">
+            <h2 class="c6Survey__question">
+                Are you familiar with the <strong>Diageo</strong> brand?
+            </h2>
+            <button class="c6Survey__btn" title="No" type="button">No</button>
+            <button class="c6Survey__btn" title="Yes" type="button">Yes</button>
+        </div>
+
+        <div id="c6Survey__results" class="c6Survey__block">
+            <h2 class="c6Survey__confirm">
+                Thank you for your feedback.
+            </h2>
+        </div>
+        
+    </div>
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-44457821-5', 'auto');
+          ga('set',{
+            checkProtocolTask : function(){},
+            hostname : window.parent.location.hostname ||  'localhost'
+          });
+    </script>
+
+    <script type="text/javascript">
+        var surveyButtons       = document.getElementsByClassName('c6Survey__btn'),
+            surveyQuestions     = document.getElementById('c6Survey__questions'),
+            surveyResults       = document.getElementById('c6Survey__results');
+            onClick = function(e){
+                surveyQuestions.style.display="none";
+                surveyResults.style.opacity="1";
+
+                var req = new XMLHttpRequest, 
+                    data = JSON.stringify({
+                        election   : params.el, 
+                        ballotItem : params.qu,
+                        vote       : e.target.value 
+                    }),
+                    surveyUrl = params.dbg ? 
+                        '//staging.cinema6.com/api/public/vote' :
+                        '//portal.cinema6.com/api/public/vote' ;
+                if (!window.location.protocol.match(/^http/)){
+                    surveyUrl = 'http:' + surveyUrl;
+                }
+                req.open('POST',surveyUrl,true);
+                req.setRequestHeader('Content-Type', 'application/json');
+                req.setRequestHeader('Content-Length', data.length);
+                req.onreadystatechange=function(){
+                    if ((req.readyState === 4) && (req.status === 200)){ 
+                        ga('send','event','survey',
+                            params.el + '-' + params.qu,e.target.value);
+                    }
+                };
+                req.send(data);
+                if (params.clicktrack) {
+                    var img = new Image();
+                    img.src = params.clicktrack;
+                }
+            },
+            params = (function(s,result,args,kvp){
+                if(s){
+                    args = s.slice(1).split('&');
+                    while (kvp = args.shift()) {
+                        kvp = kvp.split('=');
+                        result[kvp[0]] = kvp[1];
+                    }
+                }
+                return result;
+                }(document.location.search,{}));
+        
+        for (var i = 0; i < surveyButtons.length; i++) {
+            surveyButtons[i].onclick = onClick;
+        }
+        
+    </script>
+
+</body>
+</html>
