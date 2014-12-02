@@ -10,7 +10,7 @@
             },
             expand: true,
             cwd: '<%= settings.distDir %>',
-            src: ['**/*.html'],
+            src: ['**/*.html','!survey/**'],
             dest: '<%= settings.distDir %>',
             ext: '.js',
             extDot: 'last'
