@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Brand Survey Widget</title>
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -77,11 +78,11 @@
         </div>
 
         <div id="c6Survey__questions" class="c6Survey__block">
-            <h2 class="c6Survey__question">
-                Are you familiar with the <strong>Diageo</strong> brand?
+            <h2 id="c6Survey__mainQuestion" class="c6Survey__question">
+                Are you familiar with <strong>Diageo</strong> ?
             </h2>
-            <button class="c6Survey__btn" title="No" type="button" value="0">No</button>
-            <button class="c6Survey__btn" title="Yes" type="button" value="1">Yes</button>
+            <button class="c6Survey__btn" title="Yes" type="button" value="0">Yes</button>
+            <button class="c6Survey__btn" title="No" type="button" value="1">No</button>
         </div>
 
         <div id="c6Survey__results" class="c6Survey__block">
@@ -106,7 +107,9 @@
     <script type="text/javascript">
         var surveyButtons       = document.getElementsByClassName('c6Survey__btn'),
             surveyQuestions     = document.getElementById('c6Survey__questions'),
-            surveyResults       = document.getElementById('c6Survey__results');
+            surveyResults       = document.getElementById('c6Survey__results'),
+            mainQuestion        = document.getElementById('c6Survey__mainQuestion'),
+
             onClick = function(e){
                 surveyQuestions.style.display="none";
                 surveyResults.style.opacity="1";
@@ -142,7 +145,7 @@
                     args = s.slice(1).split('&');
                     while (kvp = args.shift()) {
                         kvp = kvp.split('=');
-                        result[kvp[0]] = kvp[1];
+                        result[kvp[0]] = decodeURIComponent(kvp[1]);
                     }
                 }
                 return result;
@@ -150,6 +153,11 @@
         
         for (var i = 0; i < surveyButtons.length; i++) {
             surveyButtons[i].onclick = onClick;
+        }
+
+        if (params.brand) {
+            mainQuestion.innerHTML = 
+                'Are you familiar with <strong>' + params.brand + '</strong> ?'
         }
         
     </script>
