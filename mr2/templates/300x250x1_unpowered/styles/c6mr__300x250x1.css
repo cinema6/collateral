@@ -1,0 +1,43 @@
+/*  ======================================================
+    main styles
+    ====================================================== */
+    .c6mr2-300x250x1__group {
+        width:300px; height:250px;
+        
+    }
+
+        .c6mr2-300x250x1__headerTag {
+            margin:0; 
+            position: absolute; left:57px;
+            font-size:12px; color:#838383;
+            line-height: 1.25;
+        }
+
+
+/*  ======================================================
+    article styles
+    ====================================================== */
+    .c6mr2-300x250x1__article {
+        width:300px; height:250px;
+        margin:0;
+    }
+
+
+    .c6mr2-300x250x1__imgBox,
+    .c6mr2-300x250x1__img {
+        width:300px; height:184px;
+    }
+
+        .c6mr2-mr__playBtn--300x250x1 {
+            width:40px; height:40px;
+            top:70px; left:128px;
+        }
+
+    .c6mr2-300x250x1__articleCopy {
+        width:300px; height:60px;
+    }
+
+        .c6mr2-mr__articleTitle {
+            font-size:24px;
+            line-height: 28px;
+        }
