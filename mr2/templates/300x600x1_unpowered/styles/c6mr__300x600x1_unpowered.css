@@ -37,7 +37,7 @@
         width:300px; height:300;
         position:absolute;
         bottom:0;
-        background:url('../../global/img/fader-vertical__alpha-000.png') 0 bottom repeat-x;
+        background:url('../../global/img/fader-vertical__alpha-000.png?__inline=true') 0 bottom repeat-x;
     }
 
         .c6mr2-mr__articleTitle {
