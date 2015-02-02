@@ -1,0 +1,41 @@
+/*  ==========================================================================
+    Branding classes
+    ========================================================================== */
+    .publisher__branding-logo {
+        background-image:url('../../img/pixable--square@2x.png');
+    }
+
+
+/*  ==========================================================================
+    copy styles
+    ========================================================================== */
+    @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+    body {
+        font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .tk--hdr, .ui-context__label, .mr-card__btn-watch {
+        font-family: 'Roboto Slab', 'Georgia', Times, serif;
+    }
+
+    body, .ui-nav__counter, .mr-card__type, .mr-card__title-h1, 
+    .mr-ballot__title, .mr-results__title, 
+    .mr-toc-item__title  {
+        font-weight: 400;
+    }
+
+
+/*  ==========================================================================
+    Interface Styles
+    ========================================================================== */
+    a {
+        color:#0096ff; border-bottom:1px dotted #0096ff;
+    }
+    .ui-control__next, 
+    .ui-control__prev, 
+    .ui-nav__next, 
+    .ui-nav__prev,
+    .mr-splash__copy {
+        background-color: #0096ff;
+    }

@@ -1,0 +1,31 @@
+/*  ================================================
+    primary color classes 
+    ================================================ */
+    .ballot__btn:hover:before,
+    .playlist__item--current:hover {
+        background-color:#0096ff;
+    }
+
+
+    .titleBar__titleText:hover,
+    .btnPrimary:hover .btn__label {
+        color:#0096ff;
+    }
+
+
+    .sponsorProfile__imgBox:hover,
+    .brandProfile__logoBox:hover,
+    .textLink:hover,
+    .displayAdBrand__link:hover .displayAdBrand__linkLabel {
+        border-color:#0096ff;
+    }
+
+    .recap__item:hover {
+        border-left:3px solid #0096ff;
+    }
+
+
+
+    .slideNav__btn:hover .slideNav__iconPath {
+        fill:#0096ff;
+    }

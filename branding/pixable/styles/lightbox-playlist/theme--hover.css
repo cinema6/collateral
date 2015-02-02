@@ -1,0 +1,34 @@
+/*  ================================================
+    primary color classes 
+    ================================================ */
+    .MiniReel__closeBtn:hover,
+    .playlist__item.playlist__item--current:hover,
+    .ballot__btn0:hover:before,
+    .player__playBtn:hover,
+    .btnSecondary:hover {
+        background-color:#0096ff;
+    }
+
+
+    .titleBar__titleText:hover,
+    .btnPrimary:hover .btn__label,
+    .brandProfile__link:hover {
+        color:#0096ff;
+    }
+
+
+    .sponsorProfile__imgBox:hover,
+    .textLink:hover,
+    .displayAdBrand__link:hover .displayAdBrand__linkLabel {
+        border-color:#0096ff;
+    }
+
+    .recap__item:hover {
+        border-left:3px solid #0096ff;
+    }
+
+
+
+    .nav__btn:hover .nav__btnPath {
+        fill:#0096ff;
+    }
