@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 /*  ================================================
     publisher branding classes 
     ================================================ */
@@ -21,7 +22,6 @@
 /*  ================================================
     typography classes 
     ================================================ */
-    @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
     .tk--hdr {
         font-family:'Roboto Slab', 'Georgia', Times, serif;
     }
