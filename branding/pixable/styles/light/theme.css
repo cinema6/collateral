@@ -1,0 +1,68 @@
+/*  ================================================
+    publisher branding classes 
+    ================================================ */
+    .titleBar__title {
+        width:calc(100% - 10em);
+    }
+    .experience__group--brandedMR .titleBar__title {
+        width:calc(100% - 14em);
+    }
+    .publisherProfile__logoBox {
+        width:9.375em; height:1.5em;
+        margin:0 1em 0 0;
+        background: url('../../img/pixable--wide@2x.png') 50% 50% / contain no-repeat;
+        float:right;
+        display:block;
+    }
+
+
+
+
+/*  ================================================
+    typography classes 
+    ================================================ */
+    @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+    .tk--hdr {
+        font-family:'Roboto Slab', 'Georgia', Times, serif;
+    }
+    body, .tk--copy {
+        font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
+        color:#444;
+    }
+
+
+
+/*  ================================================
+    primary action color classes 
+    ================================================ */
+    a {
+        color:#0096ff;
+    }
+    
+
+    .btnPrimary,
+    .btnPrimary:active,
+    .btnPrimary:focus,
+    .pager__btn,
+    .page__btn:before,
+    .textOnly__imgBox:before {
+        background-color:#0096ff;
+    }
+    
+
+    .btnPrimary,
+    .btnPrimary:active,
+    .btnPrimary:focus {
+        border-color:#0096ff;
+    }
+
+
+
+/*  ================================================
+    primary text color classes 
+    ================================================ */
+    .adSkip__group,
+    .card__title,
+    .ballot__title {
+        color:#000;
+    }
