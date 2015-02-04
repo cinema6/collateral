@@ -3,7 +3,7 @@
     publisher branding classes 
     ================================================ */
     .titleBar__title {
-        width:calc(100% - 10em);
+        width:calc(100% - 10.5em);
     }
     .experience__group--brandedMR .titleBar__title {
         width:calc(100% - 14em);
