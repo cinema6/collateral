@@ -25,5 +25,6 @@
     .c6mr-splashImgOnly__start--3-2 .c6mr-playBtn,
     .c6mr-splashImgOnly__start--6-5 .c6mr-playBtn,
     .c6mr-splashImgOnly__start--16-9 .c6mr-playBtn {
-        bottom:1em; left:1em; top:auto; right:auto;
+        bottom:0; left:0; top:auto; right:auto;
+        margin:0 0 4% 4%;
     }
