@@ -1,30 +1,47 @@
 /*  ================================================
-    Image Only
+    Common Splash Styles for theme
     ================================================ */
-    .c6mr-splashImgOnly__start .c6mr-playBtn {
+    .c6mr-hasHover:hover .c6mr-playBtn .c6mr-playIcon {
+        fill:#0096ff;
+    }
+
+    .c6mr-splashImgOnly__start .c6mr-playBtn,
+    .c6mr-splashTextOverlay__start .c6mr-playBtn {
         background:rgba(0,150,255,0.75);
         border:2px solid #fff;
         width:0; height:0;
         padding:5%;
     }
-        .c6mr-splashImgOnly__start .c6mr-playBtn:after {
+        .c6mr-splashImgOnly__start .c6mr-playBtn:after,
+        .c6mr-splashTextOverlay__start .c6mr-playBtn:after {
             top: -5px; left: -5px;
             padding: 5px;
             box-shadow: 0 0 0 2px #fff;
         }
-        
-        .c6mr-splashImgOnly__start .c6mr-playIconHolder {
+        .c6mr-splashImgOnly__start .c6mr-playIconHolder,
+        .c6mr-splashTextOverlay__start .c6mr-playIconHolder {
             top:0; left:0;
         }
 
-        .c6mr-hasHover:hover .c6mr-playBtn .c6mr-playIcon {
-            fill:#0096ff;
-        }
-
+/*  ================================================
+    Bottom Left Play button position
+    ================================================ */
     .c6mr-splashImgOnly__start--1-1 .c6mr-playBtn,
     .c6mr-splashImgOnly__start--3-2 .c6mr-playBtn,
     .c6mr-splashImgOnly__start--6-5 .c6mr-playBtn,
     .c6mr-splashImgOnly__start--16-9 .c6mr-playBtn {
         bottom:0; left:0; top:auto; right:auto;
         margin:0 0 4% 4%;
+    }
+
+
+/*  ================================================
+    Top Left Play button position
+    ================================================ */
+    .c6mr-splashTextOverlay__start--1-1 .c6mr-playBtn,
+    .c6mr-splashTextOverlay__start--3-2 .c6mr-playBtn,
+    .c6mr-splashTextOverlay__start--6-5 .c6mr-playBtn,
+    .c6mr-splashTextOverlay__start--16-9 .c6mr-playBtn {
+        top:0; left:0; right:auto; bottom:auto;
+        margin:4% 0 0 4%;
     }
