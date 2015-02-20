@@ -9,22 +9,101 @@
     .c6mr-splashTextOverlay__start .c6mr-playBtn,
     .c6mr-splashVerticalStack__start .c6mr-playBtn {
         background:rgba(0,150,255,0.75);
-        border:2px solid #fff;
-        width:0; height:0;
-        padding:5%;
+        -webkit-animation: c6-pulsate 1.5s infinite; /* Safari 4+ */
+        animation:         c6-pulsate 1.5s infinite; /* IE 10+, Fx 29+ */
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        padding:9%; margin:-9% 0 0 -9%;
     }
-        .c6mr-splashImgOnly__start .c6mr-playBtn:after,
-        .c6mr-splashTextOverlay__start .c6mr-playBtn:after,
-        .c6mr-splashVerticalStack__start .c6mr-playBtn:after {
-            top: -5px; left: -5px;
-            padding: 5px;
-            box-shadow: 0 0 0 2px #fff;
+
+        .c6mr-hasHover:hover .c6mr-playBtn {
+            -webkit-animation: none; /* Safari 4+ */
+            animation:         none; /* IE 10+, Fx 29+ */
         }
-        .c6mr-splashImgOnly__start .c6mr-playIconHolder,
-        .c6mr-splashTextOverlay__start .c6mr-playIconHolder,
-        .c6mr-splashVerticalStack__start .c6mr-playIconHolder {
-            top:0; left:0;
+
+    @-webkit-keyframes c6-pulsate {
+        0% { 
+            background:rgba(0,150,255,0.25);
+            -ms-transform: scale(1); /* IE 9 */
+            -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+            transform: scale(1);
         }
+        50% { 
+            background:rgba(0,150,255,0.75); 
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+            transform: scale(1.2);
+        }
+        100% { 
+            background:rgba(0,150,255,0.25);
+            -ms-transform: scale(1); /* IE 9 */
+            -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+            transform: scale(1);
+        }
+    }
+    @keyframes c6-pulsate {
+        0% { 
+            background:rgba(0,150,255,0.25);
+            -ms-transform: scale(1); /* IE 9 */
+            -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+            transform: scale(1);
+        }
+        50% { 
+            background:rgba(0,150,255,0.75); 
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+            transform: scale(1.2);
+        }
+        100% { 
+            background:rgba(0,150,255,0.25);
+            -ms-transform: scale(1); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+            transform: scale(1);
+        }
+    }
+
+
+
+
+    .c6mr-splashImgOnly__start .c6mr-playBtn2,
+    .c6mr-splashTextOverlay__start .c6mr-playBtn2,
+    .c6mr-splashVerticalStack__start .c6mr-playBtn2 {
+        background:rgba(0,150,255,0.75);
+        -webkit-animation: c6-pulsate2 1.5s infinite; /* Safari 4+ */
+        animation:         c6-pulsate2 1.5s infinite; /* IE 10+, Fx 29+ */
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        padding:9%; margin:-9% 0 0 -9%;
+    }
+
+        .c6mr-hasHover:hover .c6mr-playBtn {
+            -webkit-animation: none; /* Safari 4+ */
+            animation:         none; /* IE 10+, Fx 29+ */
+        }
+
+    @-webkit-keyframes c6-pulsate2 {
+        0% { 
+            background:rgba(0,150,255,0.25);
+        }
+        50% { 
+            background:rgba(0,150,255,0.75); 
+        }
+        100% { 
+            background:rgba(0,150,255,0.25);
+        }
+    }
+    @keyframes c6-pulsate2 {
+        0% { 
+            background:rgba(0,150,255,0.25);
+        }
+        50% { 
+            background:rgba(0,150,255,0.75); 
+        }
+        100% { 
+            background:rgba(0,150,255,0.25);
+        }
+    }
+
 
 /*  ================================================
     Bottom Left Play button position
