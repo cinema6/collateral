@@ -69,8 +69,8 @@
     .c6mr-splashTextOverlay__start .c6mr-playBtn2,
     .c6mr-splashVerticalStack__start .c6mr-playBtn2 {
         background:rgba(0,150,255,0.75);
-        -webkit-animation: c6-pulsate2 1.5s infinite; /* Safari 4+ */
-        animation:         c6-pulsate2 1.5s infinite; /* IE 10+, Fx 29+ */
+        -webkit-animation: c6-pulsate2 2s infinite; /* Safari 4+ */
+        animation:         c6-pulsate2 2s infinite; /* IE 10+, Fx 29+ */
         -webkit-animation-timing-function: ease-in-out;
         animation-timing-function: ease-in-out;
         padding:9%; margin:-9% 0 0 -9%;
