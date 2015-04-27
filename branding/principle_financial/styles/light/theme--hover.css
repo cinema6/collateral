@@ -1,0 +1,32 @@
+/*  ================================================
+    primary color classes 
+    ================================================ */
+    .ballot__btn:hover:before,
+    .player__playBtn:hover,
+    .actionsModal__btn:hover:after {
+        background-color:#03256E;
+    }
+
+
+    .btnPrimary:hover .btn__label {
+        color:#03256E;
+    }
+
+
+    .sponsorProfile__imgBox:hover {
+        border-color:#03256E;
+    }
+
+    .textLink:hover,
+    a:hover .textLink {
+        border-bottom:1px dotted #03256E;
+    }
+    .recap__item:hover {
+        border-left:3px solid #03256E;
+    }
+
+
+
+    .pager__btn:hover .pager__btnIconPath {
+        fill:#03256E;
+    }

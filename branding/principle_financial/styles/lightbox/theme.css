@@ -1,0 +1,35 @@
+/*  ================================================
+    primary action color classes 
+    ================================================ */
+    a {
+        color:#03256E;
+    }
+    
+
+    .btnPrimary,
+    .btnPrimary:active,
+    .btnPrimary:focus,
+    .pager__btn,
+    .page__btn:before,
+    .textOnly__imgBox:after {
+        background-color:#03256E;
+    }
+    
+
+    .btnPrimary,
+    .btnPrimary:active,
+    .btnPrimary:focus {
+        border-color:#03256E;
+    }
+
+
+
+/*  ================================================
+    primary text color classes 
+    ================================================ */
+    .titleBar__titleText,
+    .card__title,
+    .ballot__title,
+    .adSkip__message {
+        color:#000;
+    }

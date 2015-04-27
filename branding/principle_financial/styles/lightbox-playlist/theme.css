@@ -1,0 +1,40 @@
+/*  ================================================
+    primary action color classes 
+    ================================================ */
+    a {
+        color:#03256E;
+    }
+    
+
+    .btnPrimary,
+    .btnPrimary:active,
+    .btnPrimary:focus,
+    .btnSecondary,
+    .btnSecondary:active,
+    .btnSecondary:focus,
+    .playlist__item--current,
+    .playlist__item--current:last-child,
+    .textOnly__imgBox:after {
+        background-color:#03256E;
+    }
+    
+
+    .btnPrimary,
+    .btnPrimary:active,
+    .btnPrimary:focus,
+    .playlist__item--current,
+    .playlist__item--current:last-child {
+        border-color:#03256E;
+    }
+
+
+
+/*  ================================================
+    primary text color classes 
+    ================================================ */
+    .titleBar__titleText,
+    .card__title,
+    .ballot__title,
+    .adSkip__message {
+        color:#000;
+    }
