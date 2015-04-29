@@ -8,6 +8,10 @@
     .ui-control__prev, 
     .ui-nav__next, 
     .ui-nav__prev,
+    .btnPrimary,
+    .navBar__group,
+    .navBarLeft__group, .navBarRight__group,
+    .adSkip__group,
     .mr-splash__copy {
         background-color: #03256E;
     }
