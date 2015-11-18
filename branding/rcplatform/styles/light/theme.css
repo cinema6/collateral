@@ -21,7 +21,10 @@
 	    .card__copy--hasSponsor .sponsorProfile__links {
 		    display:block;
 		}
-
+    .MiniReel__group--soloMR .card__title {
+        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
 
 
 /*  ==========================================================================
@@ -33,11 +36,11 @@ title = 94
 copy = 100
 195 characters or fewer = 
 */
-	.MiniReel__group--soloMR .videoPreview__text--base .player__height--hasSponsor {
+	.MiniReel__group--soloMR .copy--base .player__height--hasSponsor {
 	    height: calc(100% - 8.5rem);
 	}
 
-	.MiniReel__group--soloMR .videoPreview__text--base .card__copy {
+	.MiniReel__group--soloMR .copy--base .card__copy {
 	    height:8.5rem;
 	}
 
@@ -48,11 +51,11 @@ copy= 200
 295 characters or fewer =  
 */
 
-    .MiniReel__group--soloMR .videoPreview__text--low .card__copy {
+    .MiniReel__group--soloMR .copy--low .card__copy {
 	    height:11rem;
 	}
 
-	.MiniReel__group--soloMR .videoPreview__text--low .player__height--hasSponsor {
+	.MiniReel__group--soloMR .copy--low .player__height--hasSponsor {
 	    height: calc(100% - 11rem);
 	}
 
@@ -64,11 +67,11 @@ copy= 300
 395 characters or fewer = 
 */
 
-    .MiniReel__group--soloMR .videoPreview__text--med .card__copy {
+    .MiniReel__group--soloMR .copy--med .card__copy {
 	    height:12rem;
 	}
 
-	.MiniReel__group--soloMR .videoPreview__text--med .player__height--hasSponsor {
+	.MiniReel__group--soloMR .copy--med .player__height--hasSponsor {
 	    height: calc(100% - 12rem);
 	}
 
@@ -79,10 +82,10 @@ copy= 400
 396 or more = 
 */
 
-    .MiniReel__group--soloMR .videoPreview__text--high .card__copy {
+    .MiniReel__group--soloMR .copy--high .card__copy {
 	    height:13.5rem;
 	}
 
-	.MiniReel__group--soloMR .videoPreview__text--high .player__height--hasSponsor {
+	.MiniReel__group--soloMR .copy--high .player__height--hasSponsor {
 	    height: calc(100% - 13.5rem);
 	}
