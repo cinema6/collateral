@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:400,700);
+/*  ==========================================================================
+    RC theme overrides
+    ========================================================================== */
+    .MiniReel__group--SingleCardMR .card__title {
+        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+    }
