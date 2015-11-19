@@ -19,11 +19,15 @@
 	}
 
 	    .card__copy--hasSponsor .sponsorProfile__links {
-		    display:block;
+		    display: inline-block;
 		}
+        .card__copy--hasSponsor .sponsorProfile__links span {
+            vertical-align: middle;
+        }
     .MiniReel__group--soloMR .card__title {
         font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
         font-weight: 700;
+        display: block;
     }
 
 
