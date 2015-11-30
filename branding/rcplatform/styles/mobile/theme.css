@@ -9,7 +9,7 @@
     }
     @media screen and (orientation: portrait) {
         .MiniReel__group--SingleCardMR .card__title {
-            padding-right: 0;
+            padding-right: 0.5em;
         }
         .MiniReel__group--SingleCardMR .sponsorProfile__tag {
             position: absolute;
