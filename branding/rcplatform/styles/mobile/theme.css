@@ -7,3 +7,19 @@
         font-size: 1em;
         font-weight: 700;
     }
+    @media screen and (orientation: portrait) {
+        .MiniReel__group--SingleCardMR .card__title {
+            padding-right: 0.5em;
+        }
+        .MiniReel__group--SingleCardMR .sponsorProfile__tag {
+            position: absolute;
+            top: 1rem;
+            left: 5rem;
+            font-size: .75em;
+            width: calc(100% - 7.5em);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: left;
+        }
+    }
