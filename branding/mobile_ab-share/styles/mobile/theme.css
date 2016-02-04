@@ -74,8 +74,12 @@
     }
     .sponsorProfile__linkBtn {
         position: fixed;
-        top: 0;
+        bottom: 0;
         right: 0;
+        z-index: 250;
+        width: 40%;
+        margin: 0;
+        padding: 0.25em;
         z-index: 250;
     }
     .MiniReel__group--SingleCardMR .sponsorProfile__imgBox {
