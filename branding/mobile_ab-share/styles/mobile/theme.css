@@ -165,6 +165,7 @@
         margin-bottom: 0;
         height: calc(100% - 6.75rem);
         position: absolute;
+        overflow: hidden;
         margin-right: 0;
     }
     .MiniReel__group--SingleCardMR .sponsor__goBtn,
