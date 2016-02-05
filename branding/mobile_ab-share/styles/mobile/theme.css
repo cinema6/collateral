@@ -69,30 +69,34 @@
         border-bottom: 1px solid #e7e7e7;
         box-shadow: 0 0 5px #ccc;
         padding-left: 3em;
-        padding-top: 1.5em;
-        padding-bottom: 0.75em;
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 14px;
+        padding-top: 25px;
     }
     .sponsorProfile__linkBtn {
         position: fixed;
         bottom: 0;
         right: 0;
-        z-index: 250;
         width: 40%;
         margin: 0;
         padding: 0.25em;
+        -webkit-transform-origin-z: 250px;
         z-index: 250;
     }
     .MiniReel__group--SingleCardMR .sponsorProfile__imgBox {
         position: fixed;
         top: 0.25em;
         left: 0.25em;
+        -webkit-transform-origin-z: 250px;
         z-index: 250;
     }
     .MiniReel__group--SingleCardMR .sponsorProfile__tag {
         position: fixed;
-        top: 0.5em;
+        top: 0.75em;
+        -webkit-transform-origin-z: 250px;
         z-index: 250;
-        left: 4.5em;
+        left: 3.875em;
     }
     .sponsorProfile__linkBtn button {
         display: block;
@@ -136,10 +140,11 @@
         position: absolute;
         width: auto;
         float: right;
-        bottom: 0;
+        top: 0;
         right: 0;
         width: 40%;
         padding: 0.25em;
+        bottom: initial !important;
     }
     .MiniReel__group--SingleCardMR .player__group {
         height: calc(100% - 3.5rem);
@@ -165,11 +170,13 @@
     .MiniReel__group--SingleCardMR .sponsor__goBtn,
     .MiniReel__group--SingleCardMR .sponsor__goBtn span {
         border-radius: 4px;
+        font-size: 12px;
     }
     .MiniReel__group--SingleCardMR .card__desc {
         display: block;
         margin-left: 0.5em;
         margin-top: 3.25em;
+        overflow-y: auto;
     }
     .MiniReel__group--SingleCardMR .card__desc.portraitOnly {
         display: none;
@@ -177,7 +184,7 @@
     }
     @media screen and (max-device-width: 736px) and (min-device-width: 668px) and (orientation: landscape) {
         .MiniReel__group--SingleCardMR .card__title {
-            font-size: 1em;
+            font-size: 12px;
         }
     }
     @media screen and (max-device-width: 1024px) and (min-device-width: 739px) and (orientation: landscape) {

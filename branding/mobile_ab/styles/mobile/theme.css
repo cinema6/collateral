@@ -76,6 +76,7 @@
         position: fixed;
         top: 0;
         right: 0;
+        -webkit-transform-origin-z: 250px;
         z-index: 250;
     }
     .MiniReel__group--SingleCardMR .sponsorProfile__imgBox {
@@ -87,6 +88,7 @@
     .MiniReel__group--SingleCardMR .sponsorProfile__tag {
         position: fixed;
         top: 0.5em;
+        -webkit-transform-origin-z: 250px;
         z-index: 250;
         left: 4.5em;
     }
