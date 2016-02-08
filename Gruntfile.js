@@ -48,10 +48,10 @@ module.exports = function(grunt) {
      *********************************************************************************************/
 
     grunt.registerTask('build', 'build app into distDir', [
-        'test:unit',
         'copy:collateral',
         'htmlmin:collateral',
         'cssmin:collateral',
+        'domino_css:collateral',
         'uglify:collateral',
         'inline:collateral',
         'jsify:splash'
@@ -64,6 +64,7 @@ module.exports = function(grunt) {
      *********************************************************************************************/
 
     grunt.registerTask('publish', 'upload the collateral assets and app to s3', function(target) {
+        grunt.task.run('test:unit');
         grunt.task.run('build');
         grunt.task.run('s3:' + target);
     });

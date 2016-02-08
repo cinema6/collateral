@@ -86,13 +86,6 @@
         top: 0.25em;
         left: 0.25em;
         z-index: 250;
-        &.active 
-            animation: repaint 1ms
-            @keyframes repaint 
-                from
-                    width: 99.999%
-                to
-                    width: 100%
     }
     .MiniReel__group--SingleCardMR .sponsorProfile__tag {
         /*position: fixed;*/
