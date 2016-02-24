@@ -1,7 +1,7 @@
 @import url('structure.css');
 
 .social__share {
-    margin:1em 1em 0;
+    margin:1em;
     width: calc(100% - 2em);
 
 }
@@ -63,7 +63,7 @@
                         }
 
 .cta__group {
-    margin:0.5em 1em 1em;
+    margin:0 1em 0;
 }
 
     .cta__box {
@@ -93,13 +93,14 @@
 
             .title__group {
                 padding:0;
+                margin:0.5em;
             }
 
                 .title__group h1 {
                     position: absolute;
-                    top: 0.75em;
+                    top: 1em;
                     bottom: inherit;
-                    left: 2.625em;
+                    left: 2.75em;
                     font-size: 1.25em;
                 }
 
@@ -127,11 +128,12 @@
                         float:none;
                         border:none;
                         position:relative;
+                        margin:0;
                     }
 
                         .sponsor__logo {
                             float:left;
-                            margin:0 0.75em 0.125em 0;
+                            margin:0.25em 0.75em 0.125em 0.25em;
                         }
 
                             .sponsor__logo img {
@@ -161,21 +163,21 @@
 
 
                 .social__group {
-                    height:1.5em;
-                    padding:0.75em;
-                    border-bottom:0;
-                    text-align:left;
-                    border:1px solid #dedede;
-                    border-left:0;
-                    border-right:0;
-                    background:#eee;
+                    height: 2.6125em;
+                    margin: 0;
+                    padding: 0 .75em;
+                    text-align: left;
+                    border: 1px solid #dedede;
+                    border-left: 0;
+                    border-right: 0;
+                    background: #eee;
                 }
 
                     .social__share {
                         margin: 0;
                         width: 6rem;
                         position: absolute;
-                        right: 0;
+                        right: 2em;
                         top: 0;
                     }
 
@@ -183,37 +185,9 @@
                             font-size:1.25rem;
                         }
 
-                        .socialIconFont {
-                            width: 1.5em;
-                            height: 1.5em;
-
-                        }
-
-                            .socialIconFont:before {
-                                font-size:0.875rem;
-                                top:0.375em;
+                            .social__group--share .socialIconFont:before {
+                                font-size:0.8125rem;
                             }
-
-                                .social__group--facebook .socialIconFont:before {
-                                    margin:0.0625em 0 0;
-                                }
-
-                                .social__group--pinterest .socialIconFont:before {
-                                    margin:0.0625em 0 0;
-                                }
-
-                                .social__group--vimeo .socialIconFont:before {
-                                    font-size:0.75rem;
-                                    margin:0.125em 0 0;
-                                }
-
-                                .social__group--share .socialIconFont:before {
-                                    font-size:0.75rem;
-                                }
-
-                                .social__group--instagram .socialIconFont:before {
-                                    left:0.3125em;
-                                }
 
                     .social__media li {
                         margin:0 0.5625em 0 0;
@@ -227,7 +201,7 @@
                 .description__group {
                     width:100%;
                     position:absolute;
-                    top:3.125em;
+                    top:2em;
                     bottom:0;
                     overflow-y:auto;
                 }
@@ -258,6 +232,16 @@
                         text-shadow:0 1px 1px rgba(0,0,0,.44);
                     }
 
+        .nav__counter {
+            top:inherit;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            width: 60%;
+            height: 2.5em;
+            padding: .5em;
+        }
+
     }
 
     @media only screen and (orientation: landscape) and (max-width:570px) {
@@ -267,7 +251,7 @@
         }
 
             .social__group {
-                height: 1.25em;
+                height: 2em;
             }
 
 
@@ -287,47 +271,34 @@
                     width: 1.25em;
                     height: 1.25em;
                 }
-
-                    .socialIconFont:before {
-                        font-size:0.75rem;
-                        top:0.3125em;
-                        left:0.3125em;
-                    }
-
-                        .social__group--facebook .socialIconFont:before {
-                            margin:0.0625em 0 0;
-                        }
-
-                        .social__group--pinterest .socialIconFont:before {
-                            margin:0.0625em 0 0;
-                        }
-
-                        .social__group--vimeo .socialIconFont:before {
-                            font-size:0.625em;
-                            margin:0.125em 0 0;
-                            left:0.4375em;
-                        }
-
                         
                     .social__group--share .socialIconFont {
-                        width:4em;
+                        width:3.5em;
                     }
 
                         .social__group--icon.social__group--share {
                             font-size: 1.125rem;
+                            height:1.75em;
+                            margin-top:0.375em;
+                        }
+
+                        .social__group--share .socialIconFont:before {
+                            font-size: .675rem;
                         }
 
     }
 
     @media only screen and (orientation: landscape) and (max-width:515px) {
         .title__group h1 {
-            font-size:1.125em;
-            top:1em;
-            left:2.9375em; 
+            font-size: 1.125em;
+            top: 1.25em;
+            left: 3.0625em;
         }
 
         .cta__group {
             font-size:0.5625rem;
         }
+
+            
 
     }
