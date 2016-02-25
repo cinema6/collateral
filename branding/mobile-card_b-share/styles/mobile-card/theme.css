@@ -12,6 +12,14 @@
 
     }
 
+    .social__media li {
+        margin: 0 1.25em 0 0;
+    }
+
+    .social__media li:last-child {
+        margin-right:0;
+    }
+
         .social__group--icon.social__group--share {
             display:block;
             width:100%;
@@ -202,19 +210,15 @@
                                 }
 
                     .social__media li {
-                        margin:0 0.5625em 0 0;
-                    }
-
-                    .social__media li:last-child {
-                        margin:0;
+                        margin:0 1em 0 0;
                     }
 
 
                 .description__group {
                     width:100%;
                     position:absolute;
-                    top:2.675em;
-                    bottom:0.5em;
+                    top:2.6125em;
+                    bottom:0;
                     overflow-y:auto;
                 }
 
@@ -252,7 +256,7 @@
             overflow: hidden;
             width: 60%;
             height: 2.5em;
-            padding: .5em;
+            padding:0.5em;
         }
 
     }
@@ -272,11 +276,11 @@
         }
 
             .social__group {
-                height: 2em;
+                height: 2.5em;
             }
 
             .description__group {
-                top:2em;
+                top:2.5em;
             }
 
 
@@ -284,9 +288,14 @@
                     padding:0.75em 0.25em;
                 }
 
+                .social__media {
+                    height: 1.25em;
+                    margin:0.5em 0;
+                }
+
 
                 .social__media li {
-                    margin:0 0.4375em 0 0;
+                    margin-right:0.875em;
                 }
 
                 .socialIconFont {

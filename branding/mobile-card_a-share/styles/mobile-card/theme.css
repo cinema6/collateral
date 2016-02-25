@@ -1,5 +1,4 @@
 @import url('structure.css');
-
 .social__share {
     margin:1em;
     width: calc(100% - 2em);
@@ -11,6 +10,14 @@
         display:block;
 
     }
+
+        .social__media li {
+            margin: 0 1.25em 0 0;
+        }
+
+        .social__media li:last-child {
+            margin-right:0;
+        }
 
         .social__group--icon.social__group--share {
             display:block;
@@ -25,7 +32,7 @@
         }
 
             .social__group--share .socialIconFont {
-                width:3.5em;
+                width:4em;
                 height:1.25em;
                 display:block;
                 margin:0 auto;
@@ -49,7 +56,7 @@
                     .social__group--share .socialIconFont .social__label {
                         display:inline;
                         color:#fff;
-                        font-family:'Roboto Condensed', Arial, Helvetica, sans-serif;
+                        font-family:Arial, Helvetica, sans-serif;
                         font-size:0.75em;
                         text-transform:uppercase;
                         margin:0 0 0 1.5em;
@@ -190,18 +197,16 @@
                             }
 
                     .social__media li {
-                        margin:0 0.5625em 0 0;
+                        margin:0 1em 0 0;
                     }
 
-                    .social__media li:last-child {
-                        margin:0;
-                    }
+                    
 
 
                 .description__group {
                     width:100%;
                     position:absolute;
-                    top:2em;
+                    top:2.5em;
                     bottom:0;
                     overflow-y:auto;
                 }
@@ -239,7 +244,7 @@
             overflow: hidden;
             width: 60%;
             height: 2.5em;
-            padding: .5em;
+            padding:0.5em;
         }
 
     }
@@ -255,7 +260,7 @@
         }
 
             .social__group {
-                height: 2em;
+                height: 2.5em;
             }
 
 
@@ -263,32 +268,33 @@
                     padding:0.75em 0.25em;
                 }
 
+                .social__media {
+                    height: 1.25em;
+                    margin:0.5em 0;
+                }
+
                 .social__share {
                     width: 5rem;
                 }
 
                 .social__media li {
-                    margin:0 0.4375em 0 0;
+                    margin-right:0.875em;
                 }
 
                 .socialIconFont {
                     width: 1.25em;
                     height: 1.25em;
                 }
-                        
-                    .social__group--share .socialIconFont {
-                        width:3.75em;
+
+                    .social__group--icon.social__group--share {
+                        font-size: 1.125rem;
+                        height:1.75em;
+                        margin-top:0.375em;
                     }
 
-                        .social__group--icon.social__group--share {
-                            font-size: 1.125rem;
-                            height:1.75em;
-                            margin-top:0.375em;
-                        }
-
-                        .social__group--share .socialIconFont:before {
-                            font-size: .675rem;
-                        }
+                    .social__group--share .socialIconFont:before {
+                        font-size: .675rem;
+                    }
 
     }
 
