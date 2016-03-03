@@ -101,7 +101,7 @@
         width: 100%;
         padding: 0;
         padding-top: 0.35em;
-        padding-right: 0.35em;
+        padding-right: 2.5em;
     }
     .shareBtn {
         background-color: #0c7e4a;
@@ -161,9 +161,10 @@
         position: absolute;
         overflow: auto;
     }
-    .MiniReel__group--SingleCardMR .sponsor__goBtn,
-    .MiniReel__group--SingleCardMR .sponsor__goBtn span {
+    .MiniReel__group--SingleCardMR .sponsor__goBtn {
         border-radius: 4px;
+        width:80%;
+        padding:0.5em;
     }
     .MiniReel__group--SingleCardMR .card__desc {
         display: block;
