@@ -100,7 +100,7 @@
     .sponsorProfile__linkBtn button {
         display: block;
         margin: 0;
-        width: 100%;
+        width:  6rem;
         padding: 0;
         padding-top: 0.35em;
         padding-right: 0.35em;
@@ -168,6 +168,10 @@
         overflow-y: scroll;
         margin-right: 0;
         -webkit-overflow-scrolling: touch
+    }
+    .MiniReel__group--SingleCardMR .sponsor__goBtn {
+        width:80%;
+        padding:0.5em;
     }
     .MiniReel__group--SingleCardMR .sponsor__goBtn,
     .MiniReel__group--SingleCardMR .sponsor__goBtn span {
