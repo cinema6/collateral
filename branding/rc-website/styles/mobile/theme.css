@@ -3,7 +3,7 @@
     RC theme overrides
     ========================================================================== */
     .body {
-        background: transparent;
+        background: transparent !important;
     }
     .MiniReel__group--SingleCardMR .card__title {
         font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
