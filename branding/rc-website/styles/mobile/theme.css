@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:400,700);
+/*  ==========================================================================
+    RC theme overrides
+    ========================================================================== */
+    .body {
+        background: transparent !important;
+    }
+    .MiniReel__group--SingleCardMR .card__title {
+        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    @media screen and (orientation: portrait) {
+        .MiniReel__group--SingleCardMR .cards__group {
+            background: transparent;
+        }
+        .MiniReel__group--SingleCardMR .card__title {
+            padding-right: 0.5em;
+        }
+        .MiniReel__group--SingleCardMR .sponsorProfile__tag {
+            position: absolute;
+            top: 1rem;
+            left: 5rem;
+            font-size: .75em;
+            width: calc(100% - 7.5em);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: left;
+        }
+    }

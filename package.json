@@ -34,6 +34,7 @@
     "karma-jasmine": "^0.2.2",
     "karma-phantomjs-launcher": "^0.1.4",
     "load-grunt-config": "git://github.com/firstandthird/load-grunt-config",
-    "underscore": "^1.6.0"
+    "underscore": "^1.6.0",
+    "karma": "~0.13.21"
   }
 }
