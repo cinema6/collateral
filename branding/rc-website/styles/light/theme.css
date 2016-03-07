@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:400,700);
+/*  ==========================================================================
+    RC theme overrides
+    ========================================================================== */
+    .MiniReel__group--soloMR .text--med .card__copy {
+	    height:8.5rem;
+	}
+
+	.MiniReel__group--soloMR .text--med .player__height--hasSponsor {
+	    height: calc(100% - 8.5rem);
+	}
+
+    .MiniReel__group--soloMR .text--high .card__copy {
+	    height:12rem;
+	}
+
+	.MiniReel__group--soloMR .text--high .player__height--hasSponsor {
+	    height: calc(100% - 12rem);
+	}
+
+	    .card__copy--hasSponsor .sponsorProfile__links {
+		    display: inline-block;
+		}
+        .card__copy--hasSponsor .sponsorProfile__links span {
+            vertical-align: middle;
+        }
+    .MiniReel__group--soloMR .card__title {
+        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        display: block;
+    }
+
+
+/*  ==========================================================================
+    New classes
+    ========================================================================== */
+/* 
+    Base
+title = 94
+copy = 100
+195 characters or fewer = 
+*/
+	.MiniReel__group--soloMR .copy--base .player__height--hasSponsor {
+	    height: calc(100% - 8.5rem);
+	}
+
+	.MiniReel__group--soloMR .copy--base .card__copy {
+	    height:8.5rem;
+	}
+
+/* 	
+Low
+title= 94
+copy= 200
+295 characters or fewer =  
+*/
+
+    .MiniReel__group--soloMR .copy--low .card__copy {
+	    height:11rem;
+	}
+
+	.MiniReel__group--soloMR .copy--low .player__height--hasSponsor {
+	    height: calc(100% - 11rem);
+	}
+
+
+/* 	
+Medium 
+title= 94
+copy= 300
+395 characters or fewer = 
+*/
+
+    .MiniReel__group--soloMR .copy--med .card__copy {
+	    height:12rem;
+	}
+
+	.MiniReel__group--soloMR .copy--med .player__height--hasSponsor {
+	    height: calc(100% - 12rem);
+	}
+
+/* 		
+High
+title= 94
+copy= 400
+396 or more = 
+*/
+
+    .MiniReel__group--soloMR .copy--high .card__copy {
+	    height:13.5rem;
+	}
+
+	.MiniReel__group--soloMR .copy--high .player__height--hasSponsor {
+	    height: calc(100% - 13.5rem);
+	}
