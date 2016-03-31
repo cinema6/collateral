@@ -1,0 +1,48 @@
+.sidebar__group {
+    -domino-container:.card__group;
+    -domino-order:100;
+}
+    .social__group {
+        -domino-container:.sidebar__group;
+        -domino-order:100;
+    }
+        .sponsor__group {
+            -domino-container:.social__group;
+            -domino-order:100;
+        }
+        .social__media {
+            -domino-container:.social__group;
+            -domino-order:200;
+        }
+        .social__share {
+            -domino-container:.social__group;
+            -domino-order:300;
+        }
+
+.toggle__group {
+    -domino-container:.card__group;
+    -domino-order:200;
+}
+
+.description__group {
+    -domino-container:.card__group;
+    -domino-order:300;
+}
+    .description__container {
+        -domino-container:.description__group;
+        -domino-order:100;
+    }
+
+.video__group {
+    -domino-container:.card__group;
+    -domino-order:400;
+}
+
+.title__group {
+    -domino-container:.card__group;
+    -domino-order:500;
+}
+    .cta__group {
+        -domino-container:.cta__group;
+        -domino-order:100;
+    }
