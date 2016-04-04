@@ -50,7 +50,7 @@
     -domino-container:.card__group;
     -domino-order:600;
 }
-    .tk--hdr {
+    .card__title {
         -domino-container:.title__group;
         -domino-order:100;
     }
