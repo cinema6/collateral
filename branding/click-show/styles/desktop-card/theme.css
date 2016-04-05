@@ -74,7 +74,10 @@
         display:block;
     }
 
-    /*  Starts out open on page load    */
+/*  BELOW ARE TWO DECLARATIONS OF THE SAME CLASS THAT SHOULD BE 
+    TOGGLED FOR DESCRIPTION BEING OPEN ON LOAD VS CLOSED ON LOAD   
+    ============================================================    */
+    /*  REVEAL for description OPEN on page load    
     .description__group {
         width:95%;
         position:absolute;
@@ -85,9 +88,9 @@
         -moz-transition:0.7s ease;
         -o-transition:0.7s ease;
         transition:0.7s ease;
-    }
+    }*/
 
-    /*  Starts out closed on page load    
+    /*  REVEAL for description CLOSED on page load  */  
     .description__group {
         width:95%;
         position:absolute;
@@ -98,7 +101,7 @@
         -moz-transition:0.7s ease;
         -o-transition:0.7s ease;
         transition:0.7s ease;
-    }*/
+    }
         .expand__btn {
             padding:2em 0;
             opacity:1;
@@ -132,14 +135,14 @@
                 text-align:center;
                 color:#fff;
                 position:absolute;
-                top:0.375em;
+                top:0.25em;
                 -webkit-transition: 0.2s ease-in-out;
                 -moz-transition: 0.2s ease-in-out;
                 -o-transition: 0.2s ease-in-out;
                 transition: 0.2s ease-in-out;
             }
             .expand__btn:hover .expand__label:after {
-                 transform:translate(0.125rem, 0);
+                 transform:translateX(0.125rem);
             }
         .description__container {
             box-sizing: border-box;
@@ -151,23 +154,26 @@
             border-bottom:0;
         }
 
-        /*  Closes already open description   */ 
+/*  BELOW ARE TWO DECLARATIONS OF THE SAME CLASS THAT SHOULD BE 
+    TOGGLED FOR DESCRIPTION BEING OPEN ON LOAD VS CLOSED ON LOAD   
+    ============================================================    */
+        /*  CLOSES already OPEN description    
         #toggle__btn:checked ~ .description__group {
             transform:translateX(-200%);
-        }
+        }*/
 
-        /*  Opens hidden description    
+        /*  OPENS the CLOSED description   */ 
         #toggle__btn:checked ~ .description__group {
             transform:translateX(0);
-        }*/
+        }
 
             .description__close,
             .description__close:focus {
-                width: 1.5rem;
-                height: 1.5rem;
+                width: 1.5625rem;
+                height: 1.5625rem;
                 position: absolute;
-                top: -0.75em;
-                right: -0.75em;
+                top: -0.8125em;
+                right: -0.8125em;
                 border-radius: 50%;
                 z-index: 11;
                 display: block!important;
@@ -189,7 +195,7 @@
                 content:'\e801';
                 font-style:normal;
                 font-weight:normal;
-                font-size:1em;
+                font-size:1rem;
                 speak:none;
                 display:inline-block;
                 text-decoration:inherit;
@@ -198,8 +204,8 @@
                 text-align:center;
                 color:#fff;
                 position: absolute;
-                top: -0.0625em;
-                left:0.375em;
+                top: 0;
+                left: .375rem;
             }
             .description__close:hover {
                 transform:rotate(360deg);
@@ -219,7 +225,7 @@
     .title__group {
         width:100%;
         height:14%;
-        min-height:auto;
+        min-height:inherit;
         max-height:100%;
     }
         .title__group h1 {
@@ -389,12 +395,15 @@
         }
         .description__close, 
         .description__close:focus {
-            width: 1.25rem;
-            height: 1.25rem;
+            width:1.1875rem;
+            height:1.1875rem;
+            top:-0.625rem;
+            right:-0.625rem;
         }
         .description__close:after {
-            font-size: 0.8125em;
+            font-size:0.75rem;
             top:0;
+            left:0.3125rem;
         }
     }
     @media screen and (max-height: 315px) {
@@ -414,15 +423,4 @@
                     font-size:0.75em;
                     line-height:1.25;
                 }
-        .description__close, 
-        .description__close:focus {
-            width: 1.125rem;
-            height: 1.125rem;
-            top:-0.625rem;
-            right:-0.625rem;
-        }
-        .description__close:after {
-            font-size: 0.75em;
-            top:0;
-        }
     }
