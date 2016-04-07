@@ -1,0 +1,426 @@
+/*  ================================================
+    click-show structure
+    ================================================ */
+    @import 'structure.css';
+
+/*  ================================================
+    click-show styles
+    ================================================ */
+    .sponsor__group {
+        display:block;
+    }
+    .sponsor__logo {
+        width:3em;
+        height:3em;
+        display:block;
+        border:1px solid #fff;
+        margin:0 auto 0.125em;
+        background:#fff;
+    }
+        .sponsor__img {
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: 100%;
+            background: none;
+            border: 0;
+        }
+    .sponsor__name {
+        width: 90%;
+        margin: 0 auto 0.5em;
+        padding: 0 0 .125em;
+        display: block;
+        text-align: center;
+        font-family: helvetica, sans-serif;
+        font-size:0.875em;
+        border-bottom: 1px solid rgb(58, 58, 58);
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .sidebar__group {
+        height:86%;
+        background:#000;
+        left:0;
+    }
+            .social__group--item.social__group--SVG {
+                margin:0.25em;
+                position:relative;
+            }
+    .video__group {
+        height:86%;
+        right:0;
+        left:auto;
+    }
+    .expand__group {
+        position:absolute;
+        width:20.5%;
+        bottom:14%;
+        z-index:10;
+        display:block!important;
+        opacity:1;
+    }
+        .expand__box {
+            display:block;
+            background:rgba(38, 38, 38, 1);
+            transition:0.5s ease background;
+        }
+        .expand__box:hover {
+            background:#1FADAB;
+        }
+    #toggle__btn {
+        opacity:0;
+        display:block;
+    }
+
+/*  BELOW ARE TWO DECLARATIONS OF THE SAME CLASS THAT SHOULD BE 
+    TOGGLED FOR DESCRIPTION BEING OPEN ON LOAD VS CLOSED ON LOAD   
+    ============================================================    */
+    /*  REVEAL for description OPEN on page load    
+    .description__group {
+        width:95%;
+        position:absolute;
+        bottom:14%;
+        z-index:10;
+        display:block;
+        -webkit-transition:0.7s ease;
+        -moz-transition:0.7s ease;
+        -o-transition:0.7s ease;
+        transition:0.7s ease;
+    }*/
+
+    /*  REVEAL for description CLOSED on page load  */  
+    .description__group {
+        width:95%;
+        position:absolute;
+        bottom:14%;
+        z-index:10;
+        transform:translateX(-200%);
+        -webkit-transition:0.7s ease;
+        -moz-transition:0.7s ease;
+        -o-transition:0.7s ease;
+        transition:0.7s ease;
+    }
+        .expand__btn {
+            padding:2em 0;
+            opacity:1;
+            transition:0.2s ease opacity;
+            display:block;
+            cursor: pointer;
+        }
+            .expand__label {
+                font-family:helvetica, sans-serif;
+                font-weight:bold;
+                font-size:1.25em;
+                color:#fff;
+                text-align:center;
+                display:block;
+                text-transform:uppercase;
+                position:relative;
+                margin: 0 0 0 -1rem;
+            }
+            .expand__label:after {
+                font-family:"fontello";
+                content:'\e800';
+                font-style:normal;
+                font-weight:normal;
+                font-size:0.75em;
+                speak:none;
+                display:inline-block;
+                text-decoration:inherit;
+                width:0.75em;
+                height:0.75em;
+                margin:0 0 0 0.5em;
+                text-align:center;
+                color:#fff;
+                position:absolute;
+                top:0.25em;
+                -webkit-transition: 0.2s ease-in-out;
+                -moz-transition: 0.2s ease-in-out;
+                -o-transition: 0.2s ease-in-out;
+                transition: 0.2s ease-in-out;
+            }
+            .expand__btn:hover .expand__label:after {
+                 transform:translateX(0.125rem);
+            }
+        .description__container {
+            box-sizing: border-box;
+            min-height:5.875rem;
+            padding:0.75rem;
+            background: rgba(38,38,38,0.95);
+            border:2px solid  rgba(38,38,38,1);
+            border-left:0;
+            border-bottom:0;
+        }
+
+/*  BELOW ARE TWO DECLARATIONS OF THE SAME CLASS THAT SHOULD BE 
+    TOGGLED FOR DESCRIPTION BEING OPEN ON LOAD VS CLOSED ON LOAD   
+    ============================================================    */
+        /*  CLOSES already OPEN description    
+        #toggle__btn:checked ~ .description__group {
+            transform:translateX(-200%);
+        }*/
+
+        /*  OPENS the CLOSED description   */ 
+        #toggle__btn:checked ~ .description__group {
+            transform:translateX(0);
+        }
+
+            .description__close,
+            .description__close:focus {
+                width: 1.5625rem;
+                height: 1.5625rem;
+                position: absolute;
+                top: -0.8125em;
+                right: -0.8125em;
+                border-radius: 50%;
+                z-index: 11;
+                display: block!important;
+                opacity: 1;
+                background: #000;
+                border: 2px solid #fff;
+                -webkit-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.25);
+                -moz-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.25);
+                box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.25);
+                box-sizing:content-box;
+                cursor: pointer;
+                -webkit-transition: .2s ease-in-out;
+                -moz-transition: .2s ease-in-out;
+                -o-transition: .2s ease-in-out;
+                transition: .2s ease-in-out;
+            }
+            .description__close:after {
+                font-family:"fontello";
+                content:'\e801';
+                font-style:normal;
+                font-weight:normal;
+                font-size:1rem;
+                speak:none;
+                display:inline-block;
+                text-decoration:inherit;
+                margin:0;
+                padding:0;
+                text-align:center;
+                color:#fff;
+                position: absolute;
+                top: 0;
+                left: .375rem;
+            }
+            .description__close:hover {
+                transform:rotate(360deg);
+                background:#d94040;
+            }
+            .description__container p {
+                margin:0 0.5em 0 0;
+                color:#fff;
+            }
+        .video__player {
+            position: absolute;
+            top:0;
+            right:0;
+            width:100%;
+            height:100%;
+        }
+    .title__group {
+        width:100%;
+        height:14%;
+        min-height:inherit;
+        max-height:100%;
+    }
+        .title__group h1 {
+            color:#000;
+            font-size:2.25em;
+            margin:0;
+            line-height:1;
+            width:75%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    .cta__group {
+        width:24%;
+        max-height:100%;
+        position:absolute;
+        top:1.25em;
+        bottom:1.25em;
+        right:1.25em;
+        left:inherit;
+    }
+
+/*  ================================================
+    media queries based on width (title, CTA)
+    ================================================ */
+    @media screen and (min-width: 901px) {
+        .sponsor__logo {
+            width:3em;
+            height:3em;
+        }
+
+        .sponsor__name {
+            font-size:1em;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .sponsor__logo {
+            width:4.5em;
+            height:4.5em;
+        }
+
+        .sponsor__name {
+            font-size:1.5em;
+        }
+
+        .sponsor__label {
+            font-size:1em;
+        }
+    }
+    @media screen and (min-width: 751px) and (max-width: 1045px) {
+        .title__group h1 {
+            font-size:1.625em;
+        }
+
+        .cta__group {
+            top:0.75em;
+            bottom:0.75em;
+            right:0.75em;
+        }
+
+            .sponsoredBtn {
+                font-size: 1em;
+            }
+    }
+    @media screen and (min-width: 531px) and (max-width: 750px) {
+        .title__group h1 {
+            font-size:1.4375em;
+            width:65%;
+        }
+
+        .cta__group {
+            top:0.375em;
+            bottom:0.375em;
+            right:0.375em;
+        }
+            .sponsoredBtn {
+                font-size:0.875em;
+            }
+    }
+    @media screen and (max-width: 530px) {
+        .title__group h1 {
+            font-size:0.875em;
+            width:70%;
+        }
+        .cta__group {
+            width:27%;
+            top:0.25em;
+            bottom:0.25em;
+            right:0.25em;
+        }
+
+            .sponsoredBtn {
+                font-size:0.625em;
+            }
+    }
+
+/*  ================================================
+    media queries for social media
+    ================================================ */
+    @media screen and (min-width: 901px) {
+        .social__group--icon {
+            margin-bottom:0.625em;
+        }
+    }
+    @media screen and (min-width: 751px) and (max-width: 900px) {
+        .social__group--icon {
+            margin-bottom: 0.375em;
+        }
+    }
+    @media screen and (min-width: 451px) and (max-width: 750px) {
+        .social__group--icon {
+            margin-bottom:0.1875em;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .social__group--icon {
+            margin-bottom: .125em;
+        }
+    }
+
+/*  ================================================
+    media queries based on height (sponsor logo and description)
+    ================================================ */
+    @media screen and (max-height: 600px) {
+        .expand__btn {
+            padding:1em 0;
+            position:relative;
+        }
+            .expand__label {
+                font-size:1em;
+            }
+        .description__container {
+            min-height:3.5rem;
+        }
+    }
+    @media screen and (max-height: 400px) {
+        .expand__btn {
+            padding:0.5em 0; 
+        }
+        .description__container {
+            min-height:auto;
+        }
+        .sponsor__logo {
+            width: 2.75em;
+            height: 2.75em;
+        }
+        .sponsor__label {
+            margin:0.25em 0;
+        }
+        .description__group--open {
+            padding:0.625em;
+        }
+        .description__container p {
+            font-size:0.875em;
+            line-height:1.25;
+        }
+    }
+    @media screen and (max-height: 350px) {
+        .sponsor__name {
+            padding:0;
+            font-size: 0.75em;
+            margin-bottom: 0.25em;
+        }
+        .sponsor__logo {
+            width: 1.75em;
+            height: 1.75em;
+        }
+        .description__close, 
+        .description__close:focus {
+            width:1.1875rem;
+            height:1.1875rem;
+            top:-0.625rem;
+            right:-0.625rem;
+        }
+        .description__close:after {
+            font-size:0.75rem;
+            top:0;
+            left:0.3125rem;
+        }
+    }
+    @media screen and (max-height: 315px) {
+        .expand__btn {
+            padding:0.125em 0;
+        }
+            .expand__label {
+                font-size:0.75em;
+            }
+            .expand__label:after {
+                top:0.25em;
+            }
+                .description__group--open {
+                    padding:0.5em;
+                }
+                .description__container p {
+                    font-size:0.75em;
+                    line-height:1.25;
+                }
+    }

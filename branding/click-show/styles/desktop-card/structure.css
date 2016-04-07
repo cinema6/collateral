@@ -1,0 +1,64 @@
+.sidebar__group {
+    -domino-container:.card__group;
+    -domino-order:100;
+}
+    .social__group {
+        -domino-container:.sidebar__group;
+        -domino-order:100;
+    }
+        .sponsor__group {
+            -domino-container:.social__group;
+            -domino-order:100;
+        }
+        .social__media {
+            -domino-container:.social__group;
+            -domino-order:200;
+        }
+        .social__share {
+            -domino-container:.social__group;
+            -domino-order:300;
+        }
+.expand__group {
+    -domino-container:.card__group;
+    -domino-order:200;
+}
+
+.toggle__group {
+    -domino-container:.card__group;
+    -domino-order:300;
+}
+
+.description__group {
+    -domino-container:.card__group;
+    -domino-order:400;
+}
+    .description__container {
+        -domino-container:.description__group;
+        -domino-order:100;
+    }
+    .description__close {
+        -domino-container:.description__group;
+        -domino-order:200;
+    }
+
+.video__group {
+    -domino-container:.card__group;
+    -domino-order:500;
+}
+
+.title__group {
+    -domino-container:.card__group;
+    -domino-order:600;
+}
+    .card__title {
+        -domino-container:.title__group;
+        -domino-order:100;
+    }
+    .cta__group {
+        -domino-container:.title__group;
+        -domino-order:200;
+    }
+
+.container__1 {
+    display:none;
+}
