@@ -1,0 +1,491 @@
+@import url('structure.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400italic')
+
+/* ==========================================================================
+   Slideshow MRAID Interstitial styles
+   ==========================================================================
+    Style definitions only. Define order and nesting in structure.css
+*/
+
+/* =================
+    Normalize.css - browser resets
+   ================= */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body {
+    margin: 0
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+[hidden],
+template {
+    display: none
+}
+a {
+    background-color: transparent
+}
+a:active,
+a:hover {
+    outline: 0
+}
+abbr[title] {
+    border-bottom: 1px dotted
+}
+b,
+strong {
+    font-weight: 700
+}
+dfn {
+    font-style: italic
+}
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+mark {
+    background: #ff0;
+    color: #000
+}
+small {
+    font-size: 80%
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+sup {
+    top: -.5em
+}
+sub {
+    bottom: -.25em
+}
+img {
+    border: 0
+}
+svg:not(:root) {
+    overflow: hidden
+}
+figure {
+    margin: 1em 40px
+}
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+pre {
+    overflow: auto
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+button {
+    overflow: visible
+}
+button,
+select {
+    text-transform: none
+}
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+input {
+    line-height: normal
+}
+input[type=checkbox],
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+legend {
+    border: 0;
+    padding: 0
+}
+textarea {
+    overflow: auto
+}
+optgroup {
+    font-weight: 700
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+td,
+th {
+    padding: 0
+}
+
+/* =================
+    Base styles
+   ================= */
+
+
+    body {
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        background: #333;
+        color: #fff;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    @font-face {
+      font-family: 'fontello';
+      src: url('../../../fonts/fontello.eot?20441788');
+      src: url('../../../fonts/fontello.eot?20441788#iefix') format('embedded-opentype'),
+           url('../../../fonts/fontello.woff?20441788') format('woff'),
+           url('../../../fonts/fontello.ttf?20441788') format('truetype'),
+           url('../../../fonts/fontello.svg?20441788#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+    .fa-icon
+    {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+
+      display: inline-block;
+      text-decoration: inherit;
+      text-align: center;
+      /* opacity: .8; */
+
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+    .icon-down-circled2:before { content: '\e800'; } /* '' */
+    .icon-star:before { content: '\e801'; } /* '' */
+    .icon-star-empty:before { content: '\e802'; } /* '' */
+    .icon-star-half-alt:before { content: '\e803'; } /* '' */
+    .icon-down-open:before { content: '\e804'; } /* '' */
+    .icon-down-big:before { content: '\e805'; } /* '' */
+    .icon-right-big:before { content: '\e806'; } /* '' */
+    .icon-right-open:before { content: '\e807'; } /* '' */
+    .icon-left-open:before { content: '\e808'; } /* '' */
+    .icon-up-open:before { content: '\e809'; } /* '' */
+    .icon-down:before { content: '\e80a'; } /* '' */
+    .icon-up:before { content: '\e80b'; } /* '' */
+    .icon-up-circled2:before { content: '\e80c'; } /* '' */
+    .icon-left-circled2:before { content: '\e80d'; } /* '' */
+    .icon-right-circled2:before { content: '\e80e'; } /* '' */
+    .icon-cancel:before { content: '\e80f'; } /* '' */
+
+
+/* =================
+    App Details
+   ================= */
+   .app__info {
+       background: #fff;
+        color: #333;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 150px;
+    }
+        .app__icon {
+            height: 80px;
+            width: 80px;
+            display: inline-block;
+            float: left;
+            margin: 5px;
+        }
+            .app__icon--logo {
+                width: 80px;
+                height: 80px;
+                border-radius: 10px;
+            }
+        .app__title {
+            margin-top: 5px;
+        }
+            .app__title--name {
+                margin: 0;
+                font-size: 17px;
+                color: #333;
+                font-weight: 300;
+            }
+            .app__sponsor {
+                font-size: 14px;
+                margin: 0;
+            }
+        .app__ratings {
+            display: inline-block;
+        }
+            .app__ratings--stars {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                color: #0088cc;
+            }
+                .app__ratings--stars li {
+                    display: inline;
+                }
+        .app__cost {
+            display: inline-block;
+            margin-left: 10px;
+            color: #0088cc;
+            text-transform: uppercase;
+        }
+    .action__button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        border: 1px solid #0088cc;
+        background: #0088cc;
+        color: #fff;
+        height: 50px;
+        line-height: 50px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+        .action__button a{
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+        }
+/***landscape styles***/
+@media (orientation: landscape) {
+    .slider__wrap {
+        background: #000;
+        display: block;
+        width: 60%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+        .slideshow__slider {
+            height: 100%;
+            bottom: 0;
+        }
+    .app__info {
+        position: absolute;
+        left: initial;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 40%;
+        text-align: center;
+    }
+        .app__icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+            margin-top: 10%;
+            margin-bottom: 5%;
+        }
+        .app__title {
+            text-align: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .app__title--name {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        .app__ratings {
+            display: block;
+            text-align: center;
+        }
+        .app__cost {
+            display: block;
+            text-align: center;
+        }
+        .action__button {
+            margin: 1em;
+        }
+        .slider__wrap {
+            width: 60% !important;
+        }
+}
+/* =================
+    Slider
+   ================= */
+    .viewPane {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+        .viewPane .slideshow__item--current {
+            opacity:1;
+        }
+
+   .slider__wrap {
+       background: #000;
+       display: block;
+       width: 100%;
+
+   }
+
+        .slideshow__slider {
+            width: 10000%;
+            top: 0; bottom: 150px; left: 0;
+            position: absolute;
+            list-style: none;
+            margin: 0; padding: 0 0 0 13.5%;
+        }
+            .slideshow__slider--animator {
+                -webkit-transition: -webkit-transform 0.5s;
+                transition: transform 0.5s;
+            }
+            .slideshow__item {
+                float: left;
+                width: 0.74%;
+                height: 100%;
+                margin: 0;
+                opacity: 0.25;
+                position: relative;
+                -webkit-perspective: 5000px;
+                perspective: 5000px;
+                transform: scale(.95);
+            }
+                .slideshow__item.slideshow__item--current {
+                    height: 100%;
+                    top: 0;
+                    transform: scale(1);
+                }
+                .slide__holder {
+                    -webkit-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+                    -webkit-transition: -webkit-transform 0.5s;
+                    transition: transform 0.5s;
+                    width:100%; height:100%;
+                }
+                    .slide__holder--flipped {
+                        -webkit-transform: rotateY( 180deg );
+                        transform: rotateY( 180deg );
+                    }
+                    .viewPane--skipLock .slideshow__item--current .slide__holder {
+                        -webkit-transform: translate3d(0,-1em,500px);
+                        transform: translate3d(0,-1em,500px);
+                    }
+
+                .slide {
+                    background: transparent;
+                    margin: 0;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 5;
+                    border-radius: 3px;
+                    overflow: hidden;
+                    top: 0; left: 0; right: 0;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    text-align: center;
+                }
+                    .slide img {
+                        max-height: 100%;
+                        max-width: 100%;
+                        width: auto;
+                        height: auto;
+                        position: relative;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }

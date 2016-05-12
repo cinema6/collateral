@@ -1,0 +1,93 @@
+html {
+    color: #222;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* =================
+    Element Nesting
+   ================= */
+
+header.wrapper {
+    -domino-container: .header-container;
+}
+
+article {
+    -domino-container: div.main;
+}
+aside {
+    -domino-container: div.main;
+}
+
+footer.wrapper {
+    -domino-container: .footer-container;
+}
+/***custom order***/
+.slider__wrap {
+    -domino-container: .main__container;
+}
+
+/* ==================
+    Element Ordering
+   ================== */
+.header-container {
+    -domino-order: 0;
+}
+.main-container {
+    -domino-order: 100;
+}
+.footer-container {
+    -domino-order: 200;
+}
+/***custom order***/
+.slider__wrap {
+    -domino-order: 10;
+}
+.main.wrapper {
+    -domino-order: 20;
+}
