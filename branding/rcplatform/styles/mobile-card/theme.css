@@ -1,0 +1,20 @@
+/*  ==========================================================================
+    RC theme overrides for 300x600 display unit
+    ========================================================================== */
+    @media (orientation: portrait) {
+        body {
+        background: #fff;
+        background-image: linear-gradient(#fff 80%, #eee);
+        height: 600px;
+        border: 1px solid #666;
+        box-sizing: border-box;
+        }
+        .card__group {
+            margin: 0;
+            box-shadow: none;
+            background: transparent;
+        }
+        .title__group {
+            background: transparent;
+        }
+    }
