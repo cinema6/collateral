@@ -498,3 +498,162 @@ th {
                         -ms-transform: translateY(-50%);
                         transform: translateY(-50%);
                     }
+.expand__group {
+        position:absolute;
+        width:20.5%;
+        bottom: 150px;
+        z-index:10;
+        display:block!important;
+        opacity:1;
+    }
+        .expand__box {
+            display:block;
+            background:rgba(38, 38, 38, 1);
+            transition:0.5s ease background;
+            border-top-left-radius: 90%;
+        }
+        .expand__box:hover {
+            background:#1FADAB;
+        }
+    #toggle__btn {
+        opacity:0;
+        display:block;
+    }
+
+/*  BELOW ARE TWO DECLARATIONS OF THE SAME CLASS THAT SHOULD BE 
+    TOGGLED FOR DESCRIPTION BEING OPEN ON LOAD VS CLOSED ON LOAD   
+    ============================================================    */
+    /*  REVEAL for description OPEN on page load    
+    .description__group {
+        width:95%;
+        position:absolute;
+        bottom:14%;
+        z-index:10;
+        display:block;
+        -webkit-transition:0.7s ease;
+        -moz-transition:0.7s ease;
+        -o-transition:0.7s ease;
+        transition:0.7s ease;
+    }*/
+
+    /*  REVEAL for description CLOSED on page load  */  
+    .description__group {
+        width:95%;
+        position:absolute;
+        bottom:14%;
+        z-index:10;
+        transform:translateX(-200%);
+        -webkit-transition:0.7s ease;
+        -moz-transition:0.7s ease;
+        -o-transition:0.7s ease;
+        transition:0.7s ease;
+    }
+        .expand__btn {
+            padding:2em 0;
+            opacity:1;
+            transition:0.2s ease opacity;
+            display:block;
+            cursor: pointer;
+        }
+            .expand__label {
+                font-family:helvetica, sans-serif;
+                font-weight:bold;
+                font-size:1.25em;
+                color:#fff;
+                text-align:center;
+                display:block;
+                text-transform:uppercase;
+                position:relative;
+                margin: 0 0 0 -1rem;
+            }
+            .expand__label:after {
+                font-family:"fontello";
+                content:'\e809';
+                font-style:normal;
+                font-weight:normal;
+                font-size:0.75em;
+                speak:none;
+                display:inline-block;
+                text-decoration:inherit;
+                width:0.75em;
+                height:0.75em;
+                margin:0 0 0 0.5em;
+                text-align:center;
+                color:#fff;
+                position:absolute;
+                top:0.25em;
+                -webkit-transition: 0.2s ease-in-out;
+                -moz-transition: 0.2s ease-in-out;
+                -o-transition: 0.2s ease-in-out;
+                transition: 0.2s ease-in-out;
+            }
+            .expand__btn:hover .expand__label:after {
+                 transform:translateX(0.125rem);
+            }
+        .description__container {
+            box-sizing: border-box;
+            min-height:5.875rem;
+            padding:0.75rem;
+            background: rgba(38,38,38,0.95);
+            border:2px solid  rgba(38,38,38,1);
+            border-left:0;
+            border-bottom:0;
+        }
+
+/*  BELOW ARE TWO DECLARATIONS OF THE SAME CLASS THAT SHOULD BE 
+    TOGGLED FOR DESCRIPTION BEING OPEN ON LOAD VS CLOSED ON LOAD   
+    ============================================================    */
+        /*  CLOSES already OPEN description    
+        #toggle__btn:checked ~ .description__group {
+            transform:translateX(-200%);
+        }*/
+
+        /*  OPENS the CLOSED description   */ 
+        #toggle__btn:checked ~ .description__group {
+            transform:translateX(0);
+        }
+
+            .description__close,
+            .description__close:focus {
+                width: 1.5625rem;
+                height: 1.5625rem;
+                position: absolute;
+                top: -0.8125em;
+                right: -0.8125em;
+                border-radius: 50%;
+                z-index: 11;
+                display: block!important;
+                opacity: 1;
+                background: #000;
+                border: 2px solid #fff;
+                -webkit-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.25);
+                -moz-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.25);
+                box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.25);
+                box-sizing:content-box;
+                cursor: pointer;
+                -webkit-transition: .2s ease-in-out;
+                -moz-transition: .2s ease-in-out;
+                -o-transition: .2s ease-in-out;
+                transition: .2s ease-in-out;
+            }
+            .description__close:after {
+                font-family:"fontello";
+                content:'\e801';
+                font-style:normal;
+                font-weight:normal;
+                font-size:1rem;
+                speak:none;
+                display:inline-block;
+                text-decoration:inherit;
+                margin:0;
+                padding:0;
+                text-align:center;
+                color:#fff;
+                position: absolute;
+                top: 0;
+                left: .375rem;
+            }
+            .description__close:hover {
+                transform:rotate(360deg);
+                background:#d94040;
+            }
