@@ -306,7 +306,12 @@ th {
             }
             .app__sponsor {
                 font-size: 14px;
-                margin: 0;
+                margin: 0 5px 0 0;
+                line-height: 24px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                display: inherit;
             }
         .app__ratings {
             display: inline-block;
@@ -526,20 +531,20 @@ th {
 /*  BELOW ARE TWO DECLARATIONS OF THE SAME CLASS THAT SHOULD BE 
     TOGGLED FOR DESCRIPTION BEING OPEN ON LOAD VS CLOSED ON LOAD   
     ============================================================    */
-    /*  REVEAL for description OPEN on page load    
+    /*  REVEAL for description OPEN on page load  */ 
     .description__group {
-        width:95%;
+        width:100%;
         position:absolute;
-        bottom:14%;
+        bottom:150px;
         z-index:10;
         display:block;
         -webkit-transition:0.7s ease;
         -moz-transition:0.7s ease;
         -o-transition:0.7s ease;
         transition:0.7s ease;
-    }*/
+    }
 
-    /*  REVEAL for description CLOSED on page load  */  
+    /*  REVEAL for description CLOSED on page load
     .description__group {
         width:100%;
         position:absolute;
@@ -550,7 +555,7 @@ th {
         -moz-transition:0.7s ease;
         -o-transition:0.7s ease;
         transition:0.7s ease;
-    }
+    }*/
         .expand__btn {
             padding:2em 0;
             opacity:1;
@@ -616,15 +621,15 @@ th {
 /*  BELOW ARE TWO DECLARATIONS OF THE SAME CLASS THAT SHOULD BE 
     TOGGLED FOR DESCRIPTION BEING OPEN ON LOAD VS CLOSED ON LOAD   
     ============================================================    */
-        /*  CLOSES already OPEN description    
+        /*  CLOSES already OPEN description   */
         #toggle__btn:checked ~ .description__group {
-            transform:translateX(-200%);
-        }*/
+            transform:translateX(200%) translateY(100%);
+        }
 
-        /*  OPENS the CLOSED description   */ 
+        /*  OPENS the CLOSED description
         #toggle__btn:checked ~ .description__group {
             transform:translateX(0) translateY(0);
-        }
+        }*/
 
             .description__close,
             .description__close:focus {
