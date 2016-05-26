@@ -71,6 +71,9 @@ footer.wrapper {
 .slider__wrap {
     -domino-container: .main__container;
 }
+.description__close {
+    -domino-container: .description__group;
+}
 
 /* ==================
     Element Ordering
