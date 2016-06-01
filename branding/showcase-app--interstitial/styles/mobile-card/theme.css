@@ -356,88 +356,6 @@ th {
             display: block;
             width: 100%;
         }
-/***landscape styles***/
-@media (orientation: landscape) {
-    .slider__wrap {
-        background: #000;
-        display: block;
-        width: 60%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-    }
-        .slideshow__slider {
-            height: 100%;
-            bottom: 0;
-        }
-    .app__info {
-        position: absolute;
-        left: initial;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        height: 100%;
-        width: 40%;
-        text-align: center;
-    }
-        .app__icon {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            float: none;
-            margin-top: 10%;
-            margin-bottom: 5%;
-        }
-        .app__title {
-            text-align: center;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-            .app__title--name {
-                font-size: 18px;
-                margin-bottom: 10px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                margin-right: 5px;                
-            }
-        .app__ratings {
-            display: block;
-            text-align: center;
-        }
-        .app__cost {
-            display: block;
-            text-align: center;
-        }
-        .action__button {
-            margin: 1em;
-        }
-        .slider__wrap {
-            width: 60% !important;
-        }
-        .expand__group {
-            bottom: 0;
-            right: 40%;
-            width: 60px;
-            height: 60px;
-        }
-        .description__group {
-            bottom: 0;
-            right: 40%;
-            width: 60%;
-            top: initial;
-            padding-top: 1.25em;
-        }
-            .description__close,
-            .description__close:focus {
-                top: 0;
-            }
-            .description__container {
-                max-height: 160px;
-            }
-}
 /* =================
     Slider
    ================= */
@@ -727,9 +645,85 @@ th {
 .description__group ::-webkit-scrollbar-corner {
   background-color:#e6e6e6;
 }
-.description__group {
-    display: none;
-}
-.expand__group {
-    display: none;
+/***landscape styles***/
+@media (orientation: landscape) {
+    .slider__wrap {
+        background: #000;
+        display: block;
+        width: 60%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+        .slideshow__slider {
+            height: 100%;
+            bottom: 0;
+        }
+    .app__info {
+        position: absolute;
+        left: initial;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 40%;
+        text-align: center;
+    }
+        .app__icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+            margin-top: 10%;
+            margin-bottom: 5%;
+        }
+        .app__title {
+            text-align: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .app__title--name {
+                font-size: 18px;
+                margin-bottom: 10px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-right: 5px;                
+            }
+        .app__ratings {
+            display: block;
+            text-align: center;
+        }
+        .app__cost {
+            display: block;
+            text-align: center;
+        }
+        .action__button {
+            margin: 1em;
+        }
+        .slider__wrap {
+            width: 60% !important;
+        }
+        .expand__group {
+            bottom: 0;
+            right: 40%;
+            width: 60px;
+            height: 60px;
+        }
+        .description__group {
+            bottom: 0;
+            right: 40%;
+            width: 60%;
+            top: initial;
+            padding-top: 1.25em;
+        }
+            .description__close,
+            .description__close:focus {
+                top: 0;
+            }
+            .description__container {
+                max-height: 160px;
+            }
 }
