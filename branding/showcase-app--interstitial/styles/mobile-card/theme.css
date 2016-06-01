@@ -727,3 +727,33 @@ th {
                 max-height: 160px;
             }
 }
+/***skip timer styles***/
+.nav__counter {
+    position: fixed;
+    max-width: 50%;
+    left: 25%;
+    right: 0;
+    bottom: initial;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.5em;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+    font-family: Open-Sans,helvetica,sans-serif;
+    font-size: 1em;
+}
+html,body {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+.cards__item {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
