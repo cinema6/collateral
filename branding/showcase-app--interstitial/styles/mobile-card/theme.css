@@ -550,7 +550,7 @@ th {
             border:2px solid  rgba(38,38,38,1);
             border-left:0;
             border-bottom:0;
-            max-height: 200px;
+            max-height: 130px;
             overflow-y: auto;
         }
         .description__container p {
